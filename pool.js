@@ -1,5 +1,5 @@
 //引入数据库
-const mysql = requier('mysql');
+const mysql = require('mysql');
 //声明连接池
 var pool = mysql.createPool({
 	host:'localhost',
