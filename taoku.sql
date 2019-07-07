@@ -1,3 +1,18 @@
+SET NAMES UTF8 ;
 DROP DATABASE IF EXISTS taoku ;
 CREATE DATABASE taoku CHARSET UTF8 ;
 USE taoku ;
+CREATE TABLE tk_user(
+	uid INT PRIMARY KEY AUTO_INCREMENT ,
+	user_name VARCHAR(12) ,
+	email VARCHAR(32),
+	uname varchar(12),
+	phone VARCHAR(16),
+	avatar VARCHAR(128),
+	gender INT,
+	qq_num VARCHAR(12),
+	ali_num VARCHAR(32)
+);
+INSERT INTO tk_user VALUES(
+	'10001','one','1760063136@123.com','张大大','15103862070','null',1,1760063166,15103862070
+);
