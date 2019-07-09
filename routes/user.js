@@ -59,6 +59,8 @@ var router = express.Router();
 		var $email=req.body.email;
 		var $user_name=req.body.user_name;
 		var $gender=req.body.gender;
+		var $qq_num=req.body.qq_num;
+		var $ali_num=req.body.ali_num;
 	//2.写sql语句
 		var sql="update tk_user set uname=?,upwd=?,email=?,phone=?,user_name=?,gender=? where uid=?";
 	//3.连接池进行数据操作
