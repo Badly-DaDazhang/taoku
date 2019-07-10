@@ -62,9 +62,9 @@ var router = express.Router();
 		var $qq_num=req.body.qq_num;
 		var $ali_num=req.body.ali_num;
 	//2.写sql语句
-		var sql="update tk_user set uname=?,upwd=?,email=?,phone=?,user_name=?,gender=? where uid=?";
+		var sql="update tk_user set uname=?,upwd=?,email=?,phone=?,user_name=?,gender=?,qq_num=?,ali_num=? where uid=?";
 	//3.连接池进行数据操作
-	    pool.query(sql,[$uname,$upwd,$email,$phone,$user_name,$gender,$uid],(err,result)=>{
+	    pool.query(sql,[$uname,$upwd,$email,$phone,$user_name,$gender,$uid,$],(err,result)=>{
 			if(err) throw err;
 			res.send("1");
 		});
