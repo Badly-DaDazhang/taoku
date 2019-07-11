@@ -1,0 +1,72 @@
+
+body{    background-color: #FAFAFA;
+	    font: 12px/20px "Hiragino Sans GB", "Microsoft Yahei", arial, 宋体,
+ "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #666;
+}
+header{
+	margin: 10px auto 0 auto;
+	width: 99%;
+
+}
+#heder_1{
+	width: 1000px; height: 80px;
+	margin: auto;
+	
+	font-size: 14px;
+	border-bottom: solid 2px #F5F5F5;
+}
+#heder_1 a{margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;}
+#heder_1 span .login_text{
+	width: 172px;
+	height: 40px;
+}
+#heder_1 a img{
+	margin-top: 10px;
+}
+#header_login{margin-left: px; 
+	float: right;		
+	margin-top: 30px;	
+	margin-left: 10px;		
+}
+#heder_1 span img{
+	border-radius: 50%;
+	width: 40; height: 40px ;
+}
+
+/*section*/
+#select_content{
+	  width: 1000px; height: 470px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1;
+}
+#left_pic{
+	width: 450px;
+	height: 350px;
+	float: left;
+	margin: 30px 0;
+	position: relative;
+	z-index: 1;
+}
+#select_content .lelft_pic img{
+	border: medium none;
+    vertical-align: middle;
+}
+#back{
+	width: 440px; height: 419px;
+	background-color: white;
+	white-space: nowrap;
+	float: right;
+	position: relative;
+}
+#back table{
+	width: 100%;
+}
+#back .login_er a{
+	font-size: 18px;
+	color: #333;
+}

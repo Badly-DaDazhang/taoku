@@ -5,22 +5,26 @@
 	
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../css/bass.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/user_login.css"/>
 </head>
 <body>
-	<header class="mui-bar mui-bar-nav">
+	<header class="mui-bar">
 		<div id="heder_1">
 			<a href="user_login.html"><img src="../images/login/05664089558052123.png" ></a>
-			<span>
-				<img src="../images/login/05728119946145412.jpg" >
-				<p>Hi,欢迎来到淘库商城<br>还不是本站会员？立即<a href="use_reg.html">注册</a></p>
-			</span>
+			<div id="header_login">
+				<span><img src="../images/login/05728119946145412.jpg" ></span>
+				<span class="login_text">Hi,欢迎来到淘库商城<br>还不是本站会员？立即<a href="use_reg.html">注册</a></span>
+			</div>
 		</div>
 	</header>
-	<selection id="select_content">
+	<div id="select_content">
+		<div id="left_pic">
+			<img src="../images/login/2.jpg"/>
+		</div>
 		<div id="back">
 			<table>
-				<tr>
-					<td>
+				<tr class="login_er" align="center">
+					<td width="220px">
 						<a href="" >普通登录</a>
 					</td>
 					<td>
@@ -73,7 +77,8 @@
 				</tr>
 			</table>
 		</div>
-	</selection>
+	</div>
+	<table></table> 
 	<footer>
 		<div id="foot_content">
 				<a href="">首页</a> |
