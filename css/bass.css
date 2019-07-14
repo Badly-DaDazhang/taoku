@@ -5,9 +5,16 @@ html{display: block;
 	min-height: 101%;
 }
 div{display: block;}
-span{display: block;
-		float: left;
+/*span{display: block;*/
+	
 	}
+
+	input{
+	outline: none;
+	border:0px;
+	display: inline-block;
+}
+
 p{
 	display: inline;
 }
@@ -20,4 +27,19 @@ a{
 	-webkit-transition-duration: 0.3s;
 	-webkit-transition-timing-function: ease;
 }
->>>>>>> 85b01fb03cca017de8fb76727301e425d340c1c9
+ol,ul {
+	list-style: none outside none;
+    padding:0;
+}
+li{
+	display: inline-block;
+}
+dl{margin: 0;
+	clear: left;
+	display: block;
+}
+dt,dd{
+	float: left;
+	
+}
+

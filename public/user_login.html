@@ -6,6 +6,11 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../css/bass.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/user_login.css"/>
+	<style type="text/css">
+		input{
+			border: 0;
+		}
+	</style>
 </head>
 <body>
 	<header class="mui-bar">
@@ -22,60 +27,68 @@
 			<img src="../images/login/2.jpg"/>
 		</div>
 		<div id="back">
-			<table>
-				<tr class="login_er" align="center">
-					<td width="220px">
-						<a href="" >普通登录</a>
-					</td>
-					<td>
-						<a href="">手机登录</a>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-					<hr>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						账&nbsp;&nbsp;号:<input type="text" class="uname" placeholder="用户名/邮箱/已验证手机"  />
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						密&nbsp;&nbsp;码:<input type="text" class="upwd" placeholder="6-20个大小写英文字母/符号或数字">
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">验证码：<input type="text" class="yzm" placeholder="输入验证码"></td>
-				</tr>
-				<tr>
-					<td>
-						<input type="checkbox" id="auto"><label for="auto">七天自动登录</label>
-					</td>
-					<td align="right">
-						<a href="">忘记密码</a>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2"><button type="button" class="btn">用户登录</button></td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<p>您可以使用合作账号登录</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<span class="lq">
-							<a href=""><img src="qq.png" alt="">QQ</a>
-						</span>
-						<span class="wl">
-							<a href=""><img src="weixin.pen" >微信</a>
-						</span>
-					</td>
-				</tr>
-			</table>
+			<div class="login_top">
+				<ul>
+					<li>普通登陆</li>
+					<li>手机登陆</li>
+				</ul>
+				
+			</div>
+			<div id="login_body">
+				<dl class="uname">
+					<dt>账 &nbsp; 号:</dt>
+					<dd>
+						 <input type="text" placeholder="用户名/邮箱/已验证手机"/>
+					</dd>
+					<div style="clear: both;"></div>
+				</dl>
+				<dl class="upwd">
+					<dt>密 &nbsp; 码:</dt>
+					<dd>
+						<input type="text" placeholder="6-20个大小写英文字母、数字和符号" />
+					</dd>
+						
+				</dl>
+				<div class="yzm">
+					<dl>
+						<dt>验证码:</dt>
+						<dd>
+							<input type="text" placeholder="请输入验证码" />
+						</dd>
+					
+					<span >
+						<img src="../images/login/05664089558052123.png"/>
+					</span>
+					</dl>
+				</div>
+				<div class="auto_login">
+					<span class="auto">
+						<input type="checkbox" id="auto"/>七天自动登陆
+					</span>
+					<a href="">忘记密码？</a>
+				</div>
+				<div id="btn">
+					<button>用户登陆</button>
+					
+				</div>
+			</div>
+			<div id="login_foot">
+				<h4>您可以用合作伙伴账号登陆：</h4>
+				<div class="cooper">
+					<span class="qq">
+						<a href="">
+							<i></i>
+							QQ
+						</a>
+					</span>
+					<span class="wx">
+						<a href="">
+							<i></i>
+							微信
+						</a>
+					</span>
+				</div>
+			</div>
 		</div>
 	</div>
 	<table></table> 

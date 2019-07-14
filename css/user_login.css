@@ -57,16 +57,146 @@ header{
     vertical-align: middle;
 }
 #back{
-	width: 440px; height: 419px;
+	width: 440px; height: 420px;
 	background-color: white;
-	white-space: nowrap;
+	border: 1px solid #e6e6e6;
 	float: right;
+	padding: 19px 19px 29px 19px ;
 	position: relative;
+	z-index: 1;
 }
-#back table{
-	width: 100%;
+#back .login_top{
+	word-wrap: 1em;
+	border-bottom: 1px solid #e6e6e6; 
+	padding-left:0px;
 }
-#back .login_er a{
+.login_top li{
+	
+	/*vertical-align: bottom;*/
+	width:49%;height: 40px;
+	
+	line-height: 24px;
+	text-align: center;
 	font-size: 18px;
+}
+#login_body,#login_foot{
+	width:352px;height:267px;
+	margin-top: 30px;
+	padding: 0 40px 20px 40px;
+	font-size: 12px;
+	line-height: 52px
+}
+#login_body dl{
+	background-color: white;
+	width: 348px;height: 52px;
+	line-height: 52px;
+	border: 1px solid #E6E6E6;
+	font-size: 14px;
+	color:#666666;
+	padding-left: 20px;
+}
+	#login_body dl dt{
+		width: 72px;height: 20px;
+	}
+	#login_body dl dd{
+		width: 72px;
+		margin-left:0 ;
+	}
+.upwd{
+	margin-top: -1px;
+}
+#login_body input{
+	
+	color:red;
+	height: 28px;
+	padding: 0;
+	line-height: 52px;
+}
+#login_body .yzm{
+	margin-top: 15px;
+	
+}
+#login_body .yzm dl{
+	width: 348px;
+}
+.yzm input{
+	width: 100px !important;
+}
+.yzm span{
+	height: 52px;
+	float: right;
+}
+.yzm span img{
+	border-left: 1px solid #E6E6E6;
+	width: 120px; height: 52px;
+}
+.auto_login{
+	display: inline-block;
+	width:370px;height: 20px;
+	font-size: 8px;
+	line-height: 20px;
+	margin-top:15px ;
+}
+.auto_login .auto{
+	float: left;
+	
+
+}
+#login_body .auto_login .auto input{
+	margin: 0;
+	height: 20px;line-height: 20px;
+	vertical-align: bottom;
+}
+.auto_login a{
+	float:right;
+}
+button{
+	display: block;
+	width: 346px;
+	height: 40px;
+	border:1px solid #d91e17;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin: 0 auto;
+	margin-top: -5px;
+	background: #c81623;
+}
+
+
+
+/*foot*/
+#login_foot{
+	width: 340px;height: 62px;
+	margin-top: 0;
+	padding: ;
+	line-height:  initial;
+}
+#login_foot h4{
+	margin:0 0 10px 0;
 	color: #333;
+}
+#login_foot a{
+	float: left;
+	height: 32px;
+	text-decoration: none;
+	line-height: 32pz;
+	
+	display: inline-block;
+	vertical-align: top;
+	margin-right:12px ;
+
+	line-height:62px;
+	color: #aaa;
+}
+#login_foot a i{
+	display: inline-block;
+	height: 32px;width: 32px;
+	background: url(../images/login/qq.png);
+	line-height: 32px;
+}
+footer div{
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
 }
