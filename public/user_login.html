@@ -4,6 +4,26 @@
 	<meta charset="UTF-8">
 	
 	<title></title>
+	
+	<script type="text/javascript">
+		function user_login(
+			var $uname = uname.value;
+			var $upwd = upwd.value;
+			if(!uname){
+				alert("用户名不能为空");
+				return;
+			}
+			if()
+			
+		)
+	</script>
+	
+	
+	
+	
+	
+	
+	
 	<link rel="stylesheet" type="text/css" href="../css/bass.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/user_login.css"/>
 	<style type="text/css">
@@ -38,14 +58,14 @@
 				<dl class="uname">
 					<dt>账 &nbsp; 号:</dt>
 					<dd>
-						 <input type="text" placeholder="用户名/邮箱/已验证手机"/>
+						 <input type="text" id="uname" placeholder="用户名/邮箱/已验证手机"/>
 					</dd>
 					<div style="clear: both;"></div>
 				</dl>
 				<dl class="upwd">
 					<dt>密 &nbsp; 码:</dt>
 					<dd>
-						<input type="text" placeholder="6-20个大小写英文字母、数字和符号" />
+						<input type="text" id="upwd" placeholder="6-20个大小写英文字母、数字和符号" />
 					</dd>
 						
 				</dl>
@@ -53,7 +73,7 @@
 					<dl>
 						<dt>验证码:</dt>
 						<dd>
-							<input type="text" placeholder="请输入验证码" />
+							<input type="text" id="yanzheng" placeholder="请输入验证码" />
 						</dd>
 					
 					<span >
