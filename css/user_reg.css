@@ -1,3 +1,150 @@
-#heder_1{
-	margin: 5px 6px 0px;
+body{
+	  font: 12px/20px "Hiragino Sans GB", "Microsoft Yahei", arial, 宋体,
+ "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #666;
+    background: #FFF none repeat scroll 0 0;
+    min-width: 1200px;
+    background-size: 100%;
+}
+heder{
+	width: 99%;height: 80px;
+	background: #fff;
+	border-bottom: solid 2px #f5f5f5 ;
+	margin: 5px auto 0 auto;
+} 
+ .heder_1{
+ 	width: 1000px;
+ 	height:60px;
+ 	margin: auto;
+ }
+ .heder_1 img{
+  max-width: 240px;max-height:60px;
+  border:medium none; 
+  vertical-align: middle;
+ }
+ .heder_1 div{
+ 		height: 24px
+ 		font-size:14px;
+ 		color: #aaa;
+ 		line-height: 24px;
+ 		margin-top: 50px;
+ 		float: right;
+ }
+ .heder_1 a{
+ 	font-weight: 600;
+ 	margin-left: 4px;
+ 	color: #06c;
+ }
+a:hover {
+	color: #C81623;
+	text-decoration: underline;
+}
+#bg{
+	background-image: url(../images/reg/register_bg.png) ;
+	width: 100%;height: 680px;
+	position: relative;
+}
+section{
+	width: 860px;height: 560px;
+	display: block;
+	background: rgba(0,0,0,.15);
+	padding: 10px;
+	margin: 60px auto;
+}
+.box{
+
+	background: #fff;
+	width:820px;height: 520px;
+	padding:19px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.box .left{
+	float: left;
+	width: 600px;height: 520px;
+	background-color:  #fff;
+
+}
+.box .right{
+	float: left;
+	background:#fff;
+	width: 200px;height: 520px;
+}
+.left ul{
+	border-bottom: 1px solid #e6e6e6;
+}
+.left li{
+	vertical-align: bottom;
+	letter-spacing: normal;
+	word-spacing:normal;
+	text-align: center;
+	display: inline-block;
+	width: 49%;
+	height: 40px;
+	margin-bottom:-1px;
+}
+.left li a{
+	font-size: 18px;
+	line-height: 24px;
+	padding-bottom: 13px;
+	position:relative;
+	z-index:1;
+}
+a:link{
+	text-decoration:none;
+}
+.aside_body{
+	
+	padding: 50px 80px 0 100px;
+
+}
+.aside_body dl{
+	width:398px;
+	height: 52px;
+	margin-top: -1px;
+	border:1px solid #e6e6e6;
+}
+.aside_body dt{
+	font-size: 14px;
+	line-heigth:20px;
+	color:#666;
+	width: 72px;
+	padding: 16px 0 16px 20px;
+
+}
+.aside_body dd{
+	width: 290px;
+	height:52px;
+	/*padding: 12px 0;*/
+	/*float: left;*/
+  margin: 0;padding: 0
+}
+ dd input{
+	width: 290px;
+	height:52px;
+	padding: 0;
+  color:red;
+
+}
+ dd .text{
+	  font-family: "microsoft yahei";
+    font-size: 14px;
+    line-height: 52px;
+    width: 290px;
+    height: 28px;
+    padding: 0;
+    border: none 0;
+
+}
+.aside_body .read{
+	padding: 0;height: 0
+	float:left;
+	margin: 0;
+	border: 0;
+	
+}
+.aside_body .read dd{
+	vertical-align:center;
+	line-height: 52px
 }
