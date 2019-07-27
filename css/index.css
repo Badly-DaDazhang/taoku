@@ -1,0 +1,82 @@
+.public_top_layout{
+	  font-family: Arial, 宋体;
+    line-height: 20px;
+    color: rgb(119, 119, 119);
+    background-color: rgb(250, 250, 250);
+    border-bottom: 1px solid rgb(240, 240, 240);
+		font-size: 12px;
+		width: 100%;
+		background-color: #FAFAFA;
+}
+.top_h{
+	height: 30px;
+	line-height: 30px;
+	width: 1200px;
+	margin:0 auto;
+}
+.form-check-inline li{
+	margin-right: 5px;
+}
+.form-check-inline a{color: rgb(119, 119, 119) ;}
+.form-check-inline li em{
+	  background-image: url(../images/index/top_ico.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+		
+    width: 13px;
+    height: 15px;
+    margin: 3px 2px 0px 2px;
+}
+.ico_shop{
+	 background-position: -15px -15px;
+}
+.ico_order{
+	 background-position: -30px -15px;
+}
+.ico_store{
+	 background-position: -45px -15px;
+}
+.ico_service{
+	 background-position: -60px -15px;
+}
+
+.ico_tel{
+	 background-position: 0px -15px;
+}
+
+.form-check-inline li i{
+	  background: url(../images/index/top_bg.png) no-repeat 0 0;
+    vertical-align: middle;
+    display: inline-block;
+    width: 6px;
+    height: 3px;
+    margin-left: 2px;
+    transition: .2s ease-in;
+		background-position: 0px 0px;
+}
+.public_header{width: 100%;}
+.public_header_content{width: 1200px; margin: 0 auto;}
+.public_h_logo{margin-top: 10px 15px 0 0; float: left; }
+.ad{float: left; margin: 10px 10px 0 0 ;}
+.ad a img{width:100px; height: 70px;}
+.public_search{float: left; margin:20px 0 0 20px;}
+.tab{    position: absolute;
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 2px 0 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    background: #FFF;
+    border: 2px solid #C81623;
+    text-indent: 10px;
+    border-right: none;}
+.tab li{padding: 0 1px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    background: #fff;
+    color: #666;
+    border-right: 1px solid #ddd;}
