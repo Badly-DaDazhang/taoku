@@ -45,7 +45,7 @@
 	 background-position: 0px -15px;
 }
 
-.form-check-inline li i{
+/*.form-check-inline li i{
 	  background: url(../images/index/top_bg.png) no-repeat 0 0;
     vertical-align: middle;
     display: inline-block;
@@ -53,8 +53,62 @@
     height: 3px;
     margin-left: 2px;
     transition: .2s ease-in;
-		background-position: 0px 0px;
+		background-position: 0px 0px;*/
 }
+.top_r{width: 60% ;height:30px ;float:right; text-align: right;}
+.top_r dl{    text-align: left;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    position: relative;
+    z-index: 999;}
+.top_r dl dt{
+	  /*position:absolute;
+	  top: 0px; left: 12px;
+	  z-index: 2;*/
+	  
+}
+.top_r dl dd ul{margin-bottom: 0;}
+    
+.top_r dl dt em{display: inline-block;
+		background-image: url(../images/index/top_ico.png);
+		background-repeat: no-repeat;
+		vertical-align: middle;
+		width: 13px;
+		height: 15px;
+		background-position:-15px,0px;
+		transition: all .2s;
+		
+}
+.top_r dl dt i{
+	  background: url(../images/index/top_bg.png) no-repeat 0 0;
+    vertical-align: middle;
+    display: inline-block;
+    width: 6px;
+    height: 3px;
+    margin-left: 6px;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: -webkit-transform .2s ease-in;
+    -o-transition: -webkit-transform .2s ease-in;
+    transition: .2s ease-in;
+}
+.top_r dl dd{
+	background-color: #fff;
+	width:88px;
+	border:1px solid #f0f0f0 ;
+
+}
+
+.top_r dl dd ul a{    
+	  font-size: 12px;
+    line-height: 24px;
+    display: block;
+    clear: both;
+    padding: 2px 0 2px 11px;}
+
 .public_header{width: 100%;}
 .public_header_content{width: 1200px; margin: 0 auto;}
 .public_h_logo{margin-top: 10px 15px 0 0; float: left; }
