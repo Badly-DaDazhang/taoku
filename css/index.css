@@ -65,12 +65,7 @@
     height: 30px;
     position: relative;
     z-index: 999;}
-.top_r dl dt{
-	  /*position:absolute;
-	  top: 0px; left: 12px;
-	  z-index: 2;*/
-	  
-}
+
 .top_r dl dd ul{margin-bottom: 0;}
     
 .top_r dl dt em{display: inline-block;
@@ -79,7 +74,7 @@
 		vertical-align: middle;
 		width: 13px;
 		height: 15px;
-		background-position:-15px,0px;
+		background-position:-15px -15px;
 		transition: all .2s;
 		
 }
@@ -90,15 +85,16 @@
     width: 6px;
     height: 3px;
     margin-left: 6px;
-    -webkit-transition: .2s ease-in;
-    -moz-transition: -webkit-transform .2s ease-in;
-    -o-transition: -webkit-transform .2s ease-in;
     transition: .2s ease-in;
 }
+.top_r>dl>dt:hover~dd{ display: block;}
+.top_r>dl>dt:hover em{ background-position: -15px -30px ;}
+
 .top_r dl dd{
 	background-color: #fff;
 	width:88px;
 	border:1px solid #f0f0f0 ;
+	display: none;
 
 }
 
