@@ -25,7 +25,7 @@
 			<div class="top_r">
 				<dl>
 					<dt class="zhaoshang" >
-						<em></em>
+						<em class="ico_shop"></em>
 						<a href="">招商入驻</a>
 						<i></i>
 					</dt>
@@ -40,7 +40,7 @@
 				</dl>
 				<dl>
 					<dt >
-						<em></em>
+						<em class="ico_order"></em>
 						<a href="">我的订单</a>
 						<i></i>
 					</dt>
@@ -54,7 +54,7 @@
 				</dl>
 				<dl>
 					<dt >
-						<em></em>
+						<em class="ico_store"></em>
 						<a href="">我的收藏</a>
 						<i></i>
 					</dt>
@@ -67,7 +67,7 @@
 				</dl>
 				<dl>
 					<dt >
-						<em></em>
+						<em class="ico_service"></em>
 						<a href="">客户服务</a>
 						<i></i>
 					</dt>
@@ -81,7 +81,7 @@
 				</dl>
 				<dl>
 					<dt >
-						<em></em>
+						<em class="ico_order"></em>
 						<a href="">站点导航</a>
 						<i></i>
 					</dt>
@@ -101,9 +101,9 @@
 						</ul>
 					</dd>
 				</dl>
-				<dl>
+				<dl class="tel">
 					<dt>
-						<em></em>
+						<em class="ico_tel"></em>
 						<a href="">手机移动端</a>
 						<i></i>
 					</dt>
@@ -127,7 +127,7 @@
 				</dl>
 				<dl style="width: 16px;height: 16px;">
 					<dd>
-						<a href="" target="_blank"><i></i></a>
+						<a href="" target="_blank"><img src="images/index/share_icon_mini.png" alt="" /></a>
 					</dd>
 				</dl>
 				<dl >
@@ -159,20 +159,20 @@
 			<div class="public_search">
 				<div>
 					<ul class="tab">
-						<li>
-							<span>店铺</span>
-							<i class="row"></i>
-						</li>
-						<li style="display: none;">
+						<li class="current">
 							<span>商品</span>
+							<i class="arrow"></i>
+						</li>
+						<li class="store_list">
+							<span>商店</span>
 						</li>
 					</ul>
 				</div>
-				<form action="">
-					<input type="text" placeholder="请输入您要搜索的店铺关键字">
-					<input type="submit" value="搜索" />
+				<form class="search_form" action="">
+					<input class="input-text" type="text" placeholder="请输入您要搜索的店铺关键字">
+					<input class="input-submit" type="submit" value="搜索" />
 				</form>
-				<div>
+				<div class="keyword">
 					热门搜索：
 					<ul>
 						<li><a href="">厦门</a></li>
@@ -182,18 +182,17 @@
 				</div>
 			</div>
 			<div class="head-user-menu">
-				<dl>
+				<dl class="my_mall">
 					<dt>
-						<span></span>
+						<span class="ico"></span>
 						我的商城
 						<i class="arrow"></i>
 					</dt>
-					<dd>
-						<div>
-							<a href="">我的用户中心</a>
-							<i></i>
+					<dd style="display: none;">
+						<div class="sub-title">
+							<a href="">我的用户中心<i></i></a>
 						</div>
-					  <div >
+					  <div class="user-centent-menu">
 							<ul>
 								<li>
 									<a href="">
@@ -210,34 +209,34 @@
 								</li>
 								<li>
 									<a href="">
-										站内消息(
+										咨询服务(
 										<span>0</span>
 										)
 									</a>
 								</li>
 								<li>
 									<a href="">
-										我的订单
+										我的收藏
 										<i></i>
 									</a>
 								</li>
 								<li>
 									<a href="">
-										站内消息(
+										代金券(
 										<span>0</span>
 										)
 									</a>
 								</li>
 								<li>
 									<a href="">
-										我的订单
+										我的积分
 										<i></i>
 									</a>
 								</li>
 							</ul>
 					  </div>
-						<div>
-							<div>
+						<div class="browse-history">
+							<div class="part-title">
 								<p>最近浏览商品</p>
 								<span>
 									<a href="">全部浏览历史</a>
@@ -249,9 +248,9 @@
 						</div>
 					</dd>
 				</dl>
-				<dl>
+				<dl class="my_cart">
 					<dt>
-						<span></span>
+						<span class="ico"></span>
 						购物车结算
 						<i class="arrow"></i>
 					</dt>
