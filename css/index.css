@@ -49,7 +49,9 @@
     height: 30px;
     position: relative;
     z-index: 999;}
-.top.r .tel{width: 100%; height: 30px;}
+.top_r .tel dt{width: 113px; height: 30px;}
+.top_r .xinl{margin-left: 6px; width:20px; height: 30px;}
+.top_r .xinl a{margin: 0 auto;}
 
 .top_r dl dd ul{margin-bottom: 0;}
     
@@ -106,7 +108,7 @@
     clear: both;
     padding: 2px 0 2px 11px;}
 
-.public_header{width: 100%;}
+.public_header{width: 100%;height: 100px;}
 .public_header_content{width: 1200px; margin:  auto;}
 .public_h_logo{margin: 10px 15px 0 0; float: left; }
 .ad{float: left; margin: 10px 10px 0 0 ; width: 120px;}
@@ -330,3 +332,68 @@
 	font-size: 12px;
 	display: block;
 }
+
+.head-user-menu .my_cart{
+	width: 124px;
+}
+
+.head-user-menu .my_cart dt{
+	width: 106px;
+}
+.head-user-menu dl.my_cart .ico{box-sizing: content-box; background-position: -120px 0;margin-right: 2px;}
+.head-user-menu dl.my_cart dd {
+	width: 348px;
+}
+.head-user-menu .my_cart dd .sub-title{
+	height: 28px;
+	line-height: 28px;
+	padding: 7px;
+	border-bottom:solid 1px #ddd;
+}.head-user-menu .my_cart dd .sub-title h4{
+	font-weight: 600;
+	font-size: 1em;
+	font-style: normal;
+	line-height: 28px;
+}
+.head-user-menu dl dd .incart-goods-box {
+    display: block;
+    width: 348px;
+    max-height: 267px;
+    min-height: 58px;
+    
+    overflow: hidden;
+    position: relative;
+}
+.head-user-menu dl dd .incart-goods {
+    text-align: center;
+    width: 100%;
+}
+.public_nav_layout{width: 100%;
+	position: relative;
+	z-index: 99;
+	zoom: 1;
+}
+.public_nav_layout .wrapper{width: 1200px; margin: 0 auto;}
+
+.wrapper .all-category{
+	width: 212px;
+	height: 36px;
+	display: block;
+	float: left;
+	background-color: #C81623;
+	border-radius: 2px;
+}
+.all-category .title{
+	height: 20px;
+	line-height: 20px;
+	padding: 8px 10px 10px 10px;
+}
+.all-category .title>i{
+	display: block;
+	background: url(../images/index/top_bg.png) no-repeat -182px -186px;
+	width: 18px ;
+	height: 14px;
+	float: left;
+	margin: 4px 4px 0 0 ;
+}
+ul.site-menu>li{display: inline-block; float: left;}
