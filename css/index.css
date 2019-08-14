@@ -413,6 +413,41 @@
 	float: left;
 	margin-left: 04px;
 }
+.public_nav_layout .category .menu{
+	height: 543px;
+	background: #565656;
+	padding-top: 2px;
+}
+.public_nav_layout .category .menu li{
+	width: 212px;
+	height: 34px;
+	position: relative;
+	z-index: 1;
+	zoom: 1;
+}
+.public-nav-layout .category .class{
+	display: block;
+	width: 183px;
+	height: 16px;
+	padding: 9px 15px;
+}
+
+.public-nav-layout .class .ico{
+	  vertical-align: top;
+    display: inline-block !important;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+.public-nav-layout .category .class>h4{
+	vertical-align: top;
+  display: inline-block;
+}
+
+
+
+
+
 
 ul.site-menu{
 		box-sizing: border-box;
