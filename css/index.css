@@ -623,3 +623,242 @@ ul.site-menu>li a{
 	padding: 8px 18px;
 	zoom: 1;
 }
+.home-focus-layout{
+	width: 100%;
+	height: 728px;
+	position: relative;
+	z-index: 1;
+}
+.full-screen-slides{
+	width: 100%;
+	height: 543px;
+	position: relative;
+	z-index: 1;
+}
+.full-screen-slides li{
+	width: 100%;
+	height:100%;
+	position:absolute ;
+	top: 0;
+	left: 0;
+	display: list-item;
+}
+.full-screen-slides li a{
+  display: block;
+  width: 776px;
+  height: 543px;
+  text-indent: -9999px;
+  margin-left: -388px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+}
+.full-screen-slides-pagination{
+	font-size: 0;
+	text-align: center;
+	display: block;
+	width: 600px;
+	height: 6px;
+	list-style: none;
+	padding: 7px 8px;
+	margin-left: -325px;
+	position: absolute;
+	left: 50%;
+	top: 503px;
+	z-index: 9;
+}
+.full-screen-slides-pagination li{
+	display: inline-block;
+	list-style: none;
+	border-radius: 50%;
+	/*height: 16px;*/
+	vertical-align: top;
+	letter-spacing: normal;
+	margin-left: 4px;
+	background: rgba(0,0,0,.25);
+}
+.full-screen-slides-pagination li a{
+	display: block;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+	font-family: arial;
+	font-size:12px;
+	text-indent: -9999px;
+}
+.full-screen-slides-pagination  .current{
+	background:#f30 ;
+}
+.banner-arrow {
+	width: 762px;
+	position: absolute;
+	top: 95px;
+	left: 50%;
+	margin-left: -395px;
+	z-index: 99999;
+}
+.home-focus-layout .arrow{
+	background:url(../images/index/home_bg.png) no-repeat ;
+	width: 45px;
+	height: 100px;
+	position: absolute;
+	z-index: 2;
+	top: 25px;
+	cursor: pointer;
+}
+.home-focus-layout .pre{
+	background-position: 0 -100px;
+	left: 6px;
+}
+.home-focus-layout .next{
+	background-position: -45px -100px;
+	right:0;
+}
+.jfocus-trigeminybox{
+	width: 1200px;
+	height: 164px;
+	margin: 0px auto;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.jfocus-trigeminybox a{
+	display: block;
+}
+.limited_time{
+	position: absolute;
+	z-index: 9;
+	width: 220px;
+	height: 164px;
+	float: left;
+	background: #fff;
+}
+
+.limited_time .clock-wrap{
+	position: relative;
+	width: 210px;
+	height: 164px;
+	background: url(../images/index/clock01.png) no-repeat;
+}
+.limited_time .clock{
+	position: absolute;
+	left: 81px;
+	top: 26px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: solid transparent;
+}
+.limited_time .clock:before{
+	content:"";
+	position: absolute;
+	left: 18px;
+	top: 18px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+  background: #fa0808;
+}
+.limited_time .clock .clock-h{
+	position: absolute;
+	top: 5px;
+	left: 19px;
+	height: 18px;
+	width: 5px;
+	background:url(../images/index/clock_h.png) no-repeat;
+	transform-origin: 2.5px 16.5px;
+}
+.limited_time .clock .clock-m{
+	position: absolute;
+	left: 5px;
+	top: 19px;
+	width: 19px;
+	height: 5px;
+}
+.limited_time .clock .clock-m:after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: -17px;
+  width: 4px;
+  height: 21px;
+  background-color: #1985D9;
+  border-radius: 2px;
+  background: url(../images/index/clock_m.png) no-repeat;
+  border: 1px solid transparent;	
+  transform-origin: 2.5px 20.5px;
+	animation: tick-tock 20s steps(60, end) infinite;  
+  
+}
+.limited_time .clock .clock-s{
+	position: absolute;
+  left: 17px;
+  top: -6px;
+  width: 5px;
+  height: 26px;
+  transform-origin: bottom;
+  animation: tick-tock 10s linear infinite;
+}
+.limited_time .clock .clock-s:after
+{ content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.jfocus-trigeminy{
+	float: left;
+	width: 985px;
+	height: 164px;
+	margin-left:-388px ;
+	clear: both;
+	position: absolute;
+	z-index: 2;
+	top: ;
+	left: 50%;
+	overflow: hidden;
+}
+.jfocus-trigeminy ul{
+	background: #fff;
+	height: 164px;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.jfocus-trigeminy ul li{
+	float: left;
+	width: 985px;
+	height: 164px;
+	
+}
+.jfocus-trigeminy ul li a{
+	display: block;
+	width: 240px;
+	height: 164px;
+	overflow: hidden;
+	text-align: right;
+	padding-left: 6px;
+	float: left;
+}
+.jfocus-trigeminy .arrow{
+	background: url(../images/index/home_bg.png) no-repeat;
+  width: 45px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  cursor: pointer;	
+}
+.jfocus-trigeminy .pre{
+	background-position:0 -100px ;
+	left: 6;
+}
+.jfocus-trigeminy .next{
+	background-position:-45px -100px ;
+	right: 0;
+}
