@@ -1,0 +1,34 @@
+#login_foot{
+	width: 340px;height: 62px;
+	margin-top: 0;
+	padding: ;
+	line-height:  initial;
+}
+#login_foot h4{
+	margin:0 0 10px 0;
+	color: #333;
+}
+#login_foot a{
+	float: left;
+	height: 32px;
+	text-decoration: none;
+	line-height: 32pz;
+	
+	display: inline-block;
+	vertical-align: top;
+	margin-right:12px ;
+
+	line-height:62px;
+	color: #aaa;
+}
+#login_foot a i{
+	display: inline-block;
+	height: 32px;width: 32px;
+	background: url(../images/login/qq.png);
+	line-height: 32px;
+}
+footer div{
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
