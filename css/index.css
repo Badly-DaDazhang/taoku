@@ -895,52 +895,15 @@ ul.site-menu>li a{
 	text-align: center;
 }
 .home-sale-layout .tabs-nav li i{
-  font-size: 0px;
-  line-height: 0;
-  display: none;
-  width: 0px;
-  height: 0px;
-  float: right;
-  margin-left: -4px;
-  border-width: 5px;
-  border-style: dashed dashed solid dashed;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 50%;
-}
-.home-sale-layout .tabs-nav .tabs-selected{
-	border-style: solid;
-	border-width:0 0 2px 0;
-	border-color: #C81623;
-}
-.home-sale-layout .tabs-nav .tabs-selected h3{color: #c81623;}
-.home-sale-layout .tabs-nav .tabs-selected i{
-	display: block;
-	border-color:transparent transparent #C81623;
-}
-.home-sale-layout .tabs-panel{
-	width: 989px;
-	overflow: hidden;
-}
-.home-sale-layout .tabs-panel ul{
-	margin-left: -1px;
-	width: 990px;
-	overflow: hidden;
-}
-.home-sale-layout .tabs-panel ul li{
-	width: 197px;
-	height: 235px;
-	padding: 15px 0 0 ;
-	border-left: dotted 1px #f0f0f0 ;
-	float: left;
-	overflow: hidden;
-}
-.home-sale-layout .tabs-panel dl{
-	width: 160px;
-	margin: 0 auto auto ;
-	position: relative;
+	width: 0;
+	height: 0;
+	float: right;
+	margin-left: -4px;
+	border-width: 5px;
+	border-style: dashed dashed solid dashed;  
+	position: absolute;
 	z-index: 1;
+<<<<<<< HEAD
 }
 .home-sale-layout .tabs-panel dl dt.good-name{
 	font-family: Tahoma, Geneva, sans-serif;
@@ -1046,3 +1009,8 @@ ul.site-menu>li a{
     padding: 0;
 }
 	
+=======
+	bottom: 0;
+	left: 50%;
+}
+>>>>>>> parent of ff8708e... css index 4/5
