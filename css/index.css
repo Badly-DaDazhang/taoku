@@ -895,15 +895,52 @@ ul.site-menu>li a{
 	text-align: center;
 }
 .home-sale-layout .tabs-nav li i{
-	width: 0;
-	height: 0;
-	float: right;
-	margin-left: -4px;
-	border-width: 5px;
-	border-style: dashed dashed solid dashed;  
-	position: absolute;
+  font-size: 0px;
+  line-height: 0;
+  display: none;
+  width: 0px;
+  height: 0px;
+  float: right;
+  margin-left: -4px;
+  border-width: 5px;
+  border-style: dashed dashed solid dashed;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+}
+.home-sale-layout .tabs-nav .tabs-selected{
+	border-style: solid;
+	border-width:0 0 2px 0;
+	border-color: #C81623;
+}
+.home-sale-layout .tabs-nav .tabs-selected h3{color: #c81623;}
+.home-sale-layout .tabs-nav .tabs-selected i{
+	display: block;
+	border-color:transparent transparent #C81623;
+}
+.home-sale-layout .tabs-panel{
+	width: 989px;
+	overflow: hidden;
+}
+.home-sale-layout .tabs-panel ul{
+	margin-left: -1px;
+	width: 990px;
+	overflow: hidden;
+}
+.home-sale-layout .tabs-panel ul li{
+	width: 197px;
+	height: 235px;
+	padding: 15px 0 0 ;
+	border-left: dotted 1px #f0f0f0 ;
+	float: left;
+	overflow: hidden;
+}
+.home-sale-layout .tabs-panel dl{
+	width: 160px;
+	margin: 0 auto auto ;
+	position: relative;
 	z-index: 1;
-<<<<<<< HEAD
 }
 .home-sale-layout .tabs-panel dl dt.good-name{
 	font-family: Tahoma, Geneva, sans-serif;
@@ -1008,9 +1045,142 @@ ul.site-menu>li a{
     min-width: 1190px;
     padding: 0;
 }
-	
-=======
-	bottom: 0;
-	left: 50%;
+
+
+
+/*底部保证开始*/
+.fttff29 {
+	background-color: #f5f5f5;
+	width: 100%;
 }
->>>>>>> parent of ff8708e... css index 4/5
+
+.warp-all236 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.mod_agree {
+	padding: 15px 0px 10px 0px;
+	text-align: center;
+}
+
+.mod_agree_con {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.mod_agree_item {
+    /*
+	margin-top: 10px;
+    */
+	display: inline;
+	float: left;
+	width: 198px;
+	border-right: 1px dotted #CCC;
+}
+
+.mod_agree_item1 i {
+	background-position: 0 -60px;
+}
+
+.mod_agree_item i {
+	display: block;
+	margin: auto;
+	width: 36px;
+	height: 35px;
+	background-image: url(../images/home_bg211.png);
+	background-repeat: no-repeat;
+}
+
+.mod_agree_item a {
+	color: #666;
+	font: 12px/1.5 "Lucida Grande", tahoma, arial, \5b8b\4f53;
+	display: block;
+    /*
+	padding-top: 5px;
+    */
+	line-height: 18px;
+}
+
+.mod_agree_item a:hover {
+	color: #666;
+	font: 12px/1.5 "Lucida Grande", tahoma, arial, \5b8b\4f53;
+	display: block;
+    /*
+	padding-top: 5px;
+    */
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.mtdibu10 {
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.mod_agree_item span {
+	display: block;
+	color: #999;
+}
+
+.ic_footer_inner a {
+	color: #555;
+}
+
+.mod_agree_item2 i {
+	background-position: -50px -60px;
+}
+
+.mod_agree_item3 i {
+	background-position: -100px -60px;
+}
+
+.mod_agree_item4 i {
+	background-position: -150px -60px;
+}
+
+.mod_agree_item5 i {
+	background-position: -200px -60px;
+}
+
+.mod_agree_item6 {
+	border-right: 0;
+}
+
+.mod_agree_item6 i {
+	background-position: -250px -60px;
+}
+
+.public-top-layout .seller-login {
+	background-color: #D40000;
+	display: inline-block;
+	margin-left: 10px;
+	border: 1px solid #d90000;
+	border-radius: 3px;
+	box-shadow: 2px 2px 0 rgba(204, 204, 204, 0.65);
+}
+
+.public-top-layout .seller-login a {
+	line-height: 14px;
+	color: #FFF;
+	display: block;
+	height: 14px;
+	padding: 1px 4px;
+}
+
+.public-top-layout .seller-login a:hover {
+	text-decoration: none;
+	background-color: #D90000;
+}
+
+.public-top-layout .seller-login i {
+	font-size: 14px;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+	
