@@ -23,13 +23,13 @@ CREATE TABLE tk_index_carousel(
 	title VARCHAR(32),
 	href VARCHAR(64)
 );
-INSERT INTO tk_index_carousel VALUES(
+INSERT INTO tk_index_carousel VALUES
 	('1','images/index/web-101-101-2.jpg','免费开网店，上淘库商城！','javascript:;'),
 	('2','images/index/web-101-101-5.jpg','皇家龙船酒业品牌专营店','javascript:;'),
 	('3','images/index/web-101-101-4.jpg','健康鼠智能品牌旗舰店','javascript:;'),
 	('4','images/index/web-101-101-1.jpg','盛世无线充电品牌工厂店','javascript:;'),
 	('5','images/index/web-101-101-3.jpg','邦辰生活品牌超级店','javascript:;')
-);
+;
 CREATE TABLE tk_receiver_adderss(
 	aid INT PRIMARY KEY AUTO_INCREMENT,
   user_id INT,                #用户编号
@@ -56,14 +56,35 @@ CREATE TABLE tk_shoppingcart_item(
 /**商品家族镖 */
 CREATE TABLE tk_goods_family(
   fid INT PRIMARY KEY AUTO_INCREMENT,
-  fname VARCHAR(32)
+  fname VARCHAR(32),
+  img VARCHAR(128)
 );
-/**商品家族镖 */
+-- 添加家族分类数据
+INSERT INTO tk_goods_family VALUES
+  ('1001','家用电器','category-pic-888.jpg'),
+  ('1002','手机数码','category-pic-430.jpg'),
+  ('1003','电脑办公/图书/文娱','category-pic-730.jpg'),
+  ('1004','美妆护肤/个人护理','category-pic-1244.jpg'),
+  ('1005','女装/内衣/服饰配件','category-pic-256.jpg'),
+  ('1006','男装/户外/运动用品','category-pic-1116.jpg'),
+  ('1007','箱包皮具/男鞋/女鞋','category-pic-1117.jpg'),
+  ('1008','珠宝首饰','category-pic-1483.jpg'),
+  ('1009','母婴玩具','category-pic-959.jpg'),
+  ('1010','食品生鲜/酒水/饮料','category-pic-593.jpg'),
+  ('1011','医药保健/计生/情趣','category-pic-825.jpg'),
+  ('1012','家居用品/家纺/餐具','category-pic-1057.jpg'),
+  ('1013','家具建材/卫浴/灯饰','category-pic-530.jpg'),
+  ('1014','汽车/汽车用品/装饰','category-pic-662.jpg'),
+  ('1015','进口商品','category-pic-1065.jpg'),
+  ('1016','超市/便利店/到家服务','category-pic-1757.jpg')
+;
+/**商品子家族分类 */
 CREATE TABLE tk_goods_family_member(
   mid INT PRIMARY KEY AUTO_INCREMENT,
   fid INT ,
   fname VARCHAR(32)
 );
+
 /**商品详情表**/
 CREATE TABLE tk_goods(
   lid INT PRIMARY KEY AUTO_INCREMENT,

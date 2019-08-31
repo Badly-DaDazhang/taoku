@@ -1,7 +1,8 @@
 const express = require('express');
 //引入中0间件
 const bodyParser = require('body-parser');
-const userRouter = require('./routes/user.js');
+const userRouter = require('./routes/user.router.js');
+const indexRouter = require('./routes/index.router.js')
 //创建服务器
 var app = express();
 //设置app的接口
@@ -14,3 +15,4 @@ app.use(bodyParser.urlencoded({
 }));
 //user 请求挂载到user路由器
 app.use('/user',userRouter);
+app.use('/index1',indexRouter);
