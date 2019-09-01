@@ -1,4 +1,4 @@
-$(function(){
+ $(function(){
   $.ajax({
     type:"get",
     url:"public_header.html",

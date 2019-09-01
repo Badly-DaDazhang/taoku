@@ -11,7 +11,15 @@ router.get("/cal",(req,res)=>{
   });
 });
 router.get("/getcate",(req,res)=>{
-  var sql="select fname,img from tk_goods_family"
+  var sql="select fid,fname,img,hotgoods from tk_goods_family"
+  pool.query(sql,(err,result)=>{
+    if(err)throw err ;
+    res.send(result);
+  })
+})
+router.get("/getcatenums",(req,res)=>{
+  var obj=req.query;
+  var sql=`select mid,fname,fname,fnember from tk_goods_family_member where fid=${obj.fid}`
   pool.query(sql,(err,result)=>{
     if(err)throw err ;
     res.send(result);

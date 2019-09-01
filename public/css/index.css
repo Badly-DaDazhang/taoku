@@ -38,6 +38,7 @@
     margin-left: 2px;
     transition: .2s ease-in;
 		background-position: 0px 0px;*/
+		
 
 .top_r{width: 60% ;height:30px ;float:right; text-align: right;}
 .top_r dl{    text-align: left;
@@ -74,7 +75,8 @@
     margin-left: 6px;
     transition: .2s ease-in;
 }
-.top_r>dl>dt:hover~dd{ display: block;}
+
+.top_r>dl:hover dd{ display: block !important;}
 .top_r>dl>dt:hover em{ background-position-y:  -30px ;}
 
 .top_r dl dt .ico_shop{
@@ -425,11 +427,21 @@
 	z-index: 1;
 	zoom: 1;
 }
+.public_nav_layout .category .menu li:hover .sub-class{
+	display: block !important;
+}
 .public_nav_layout .category .class{
 	display: block;
 	width: 183px;
 	height: 16px;
 	padding: 9px 15px;
+	transition: all 0.15s linear;
+}
+.public_nav_layout .category .class:hover{
+	background-color: #C81623;
+	width: 175px;
+	padding: 9px 15px 9px 23px;
+	z-index: 2;
 }
 
 .public_nav_layout .category .class .ico{
@@ -494,6 +506,7 @@
 	padding: 2px 10px;
 	line-height: 20px;
 }
+
 .public_nav_layout .category .sub-class dl{padding-top:10px ;}
 .public_nav_layout .category .sub-class dl dt, .public_nav_layout .category .sub-class dl dd {
   font-size: 12px;
