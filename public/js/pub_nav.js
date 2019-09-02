@@ -36,10 +36,10 @@ $(function(){
                 `;
               }
             }
-            html+=`
-                    </div>
+            // html+=`
+            //         </div>
                   
-            `
+            // `
             $.ajax({
               type:"get",
               url:"http://localhost:8848/index1/getcatenums",
@@ -50,6 +50,7 @@ $(function(){
                 // console.log(sonresult);
                 for(var j=0;j<sonresult.length;j++){
                   html+=`
+                  
                   <dl>
                     <dt>
                       <h3><a href="">${sonresult[j].fname}</a></h3>
@@ -66,6 +67,7 @@ $(function(){
                   html+=`
                     </dd>
                   </dl>
+                  
                   `
                   
                 }
@@ -74,21 +76,16 @@ $(function(){
           
             // <h3><a href="">家用电器</a></h3>
             
-            html+=`    
+            html+=` 
+                  </div>
+                  </div>   
                   <div class="sub-class-right">
                     <div class="brans-list">
-                      <ul>
-                        <li>
-                          <a href="" title="复旦申花">
-                          <img src="images/index/06178945232014916_small.jpg" />
-                          <span>复旦申花</span>
-                          </a>
-                        </li>
-                      </ul>
+                      
                     </div>
                     <div class="adv-promotions">
                       <a target="_blank" href="">
-                        <img src="images/index/05858318772100637.jpg" alt="" />
+                        <img src="images/index/06035185650611810.png" alt="" />
                       </a>
                     </div>
                   </div>

@@ -64,7 +64,26 @@ $(function(){
         lbTime=setInterval(fun2,2500)
       });
       //左右箭头
-      
+      $(".banner-arrow>.pre").click(()=>{
+        clearInterval(lbTime);
+        s--;
+        if(s<0){s=result.length-1};
+        $(li[s]).siblings().removeClass("opacity");
+        $(sli[s]).siblings().removeClass("current");
+        $(li[s]).addClass("opacity");
+        $(sli[s]).addClass("current");
+        lbTime = setInterval(fun2,2500);
+      });
+      $(".banner-arrow>.next").click(()=>{
+        clearInterval(lbTime);
+        s++;
+        if(s>result.length-1){s=0};
+        $(li[s]).siblings().removeClass("opacity");
+        $(sli[s]).siblings().removeClass("current");
+        $(li[s]).addClass("opacity");
+        $(sli[s]).addClass("current");
+        lbTime = setInterval(fun2,2500);
+      })
 
 
     }
