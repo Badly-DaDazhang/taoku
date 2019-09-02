@@ -717,6 +717,10 @@ ul.site-menu>li a{
 	margin-left: -395px;
 	z-index: 99999;
 }
+.banner-arrow .arrow:hover{
+	opacity: 1 !important;
+	/* z-index: 999 !important; */
+}
 .home-focus-layout .arrow{
 	background:url(../images/index/home_bg.png) no-repeat ;
 	width: 45px;
@@ -725,6 +729,7 @@ ul.site-menu>li a{
 	z-index: 2;
 	top: 25px;
 	cursor: pointer;
+	transition: all 0.2s linear;
 }
 .home-focus-layout .pre{
 	background-position: 0 -100px;
