@@ -84,8 +84,27 @@ $(function(){
         $(sli[s]).addClass("current");
         lbTime = setInterval(fun2,2500);
       })
-
-
     }
   })
+  // 导航下小导航
+  var lbjfS = 0 ; //时间控制器  默认为9
+  var move = -985;
+  var lbjf = $(".jfocus-trigeminy>ul")
+  var lbjfli =$(".jfocus-trigeminy>ul>li")
+ 
+  var funjf = function(){
+    
+    lbjfS>-3980?lbjfS+=move:lbjfS=0 ;
+    lbjf.css("left",lbjfS+"px");
+  }  
+  var lbjftime = setInterval(funjf,2500)
+  lbjf.mouseenter(()=>{
+    clearInterval(lbjftime)
+    $("lbjfli>a").siblings().addClass("nopoint")
+  });
+  lbjf.mouseleave(()=>{
+    lbjftime = setInterval(funjf,2500)
+   
+  })
+      
 })

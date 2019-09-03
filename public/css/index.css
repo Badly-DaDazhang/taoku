@@ -489,6 +489,7 @@
 .public_nav_layout .category .sub-class-content{
 	width: 730px;
 	float: left;
+	
 }
 .public_nav_layout .category .recommend-class span{
 	font-size: 12px;
@@ -851,12 +852,20 @@ ul.site-menu>li a{
 	position: absolute;
 	z-index: 1;
 	overflow: hidden;
+	transition:all 0.5s linear;
 }
 .jfocus-trigeminy ul li{
 	float: left;
 	width: 985px;
 	height: 164px;
 	
+}
+.jfocus-trigeminy ul li img{transition: all 0.2s linear;}
+.jfocus-trigeminy ul li .point{
+	opacity: 1;
+}
+.jfocus-trigeminy ul li .nopoint{
+	opacity: .5;
 }
 .jfocus-trigeminy ul li a{
 	display: block;

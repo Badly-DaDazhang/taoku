@@ -58,7 +58,7 @@ $(function(){
                     <dd>`
                       // <a href="">电视</a>
                       var sons = sonresult[j].fnember.split(",")
-                      console.log(sons);
+                      // console.log(sons);
                       for(var s=0;s<sons.length;s++){
                         html+=`
                         <a href="javascript:;">${sons[s]}</a>
