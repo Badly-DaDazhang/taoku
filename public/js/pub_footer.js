@@ -1,0 +1,9 @@
+$(function(){
+  $.ajax({
+    type:"get",
+    url:"footer.html",
+    success:function(pub_footer){
+      $(pub_footer).replaceAll("footer");
+    }
+  })
+})

@@ -8,6 +8,7 @@
    	<script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bass.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css">
     
 	<script src="js/pub_top.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/pub_header.js"></script>
@@ -18,7 +19,108 @@
 	<body>
 		<div id="public_top"></div>
 		<header></header>
-		<div id="public_nav"></div>
+    <div id="public_nav"></div>
+
+    <div id="vToolbar" class="nc-appbar">
+        <div class="nc-appbar-tabs" id="appBarTabs">
+              <div class="user ta_delay" nctype="a-barLoginBox">
+            <div class="avatar">
+              <img src="https://www.taokubuy.com/data/upload/shop/common/05728119946145412.jpg">
+            </div>
+            <p>未登录</p>
+          </div>
+          <div class="user-login-box" nctype="barLoginBox" style="display: none;">
+            <i class="arrow"></i> <a href="javascript:void(0);" class="close-a" nctype="close-barLoginBox" title="关闭">X</a>
+            <form id="login_form" method="post" action="index.php?act=login&amp;op=login" onsubmit="ajaxpost('login_form', '', '', 'onerror')">
+              <input type="hidden" name="formhash" value="wwkbwgX6WsnnTigpNRq0pGcCorNc4vc">        <input type="hidden" name="form_submit" value="ok"> <input name="nchash" type="hidden" value="7802773a">
+              <dl>
+                <dt>
+                  <strong>登录名</strong>
+                </dt>
+                <dd>
+                  <input type="text" class="text" tabindex="1" autocomplete="off" name="user_name" autofocus=""> <label></label>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <strong>登录密码</strong><a href="index.php?act=login&amp;op=forget_password" target="_blank">忘记登录密码？</a>
+                </dt>
+                <dd>
+                  <input tabindex="2" type="password" class="text" name="password" autocomplete="off"> <label></label>
+                </dd>
+              </dl>
+                      <dl>
+                <dt>
+                  <strong>验证码</strong><a href="javascript:void(0)" class="ml5" onclick="javascript:document.getElementById('codeimage').src='https://www.taokubuy.com/shop/index.php?act=seccode&amp;op=makecode&amp;nchash=7802773a&amp;t=' + Math.random();">更换验证码</a>
+                </dt>
+                <dd>
+                  <input tabindex="3" type="text" name="captcha" autocomplete="off" class="text w130" id="captcha2" maxlength="4" size="10"> <img src="" name="codeimage" border="0" id="codeimage" class="vt"> <label></label>
+                </dd>
+              </dl>
+                      <div class="bottom nc-login-api">
+                <input type="submit" class="submit" value="确认"> <input type="hidden" value="" name="ref_url">
+      
+            <div class="bottomthird">
+      
+                
+      
+              
+              <a class="mr10 qq" title="QQ账号登录" href="https://www.taokubuy.com/shop/api.php?act=toqq"><i></i>QQ账号</a>		  
+                          <a class="mr10 wx" title="微信账号登录" onclick="ajax_form('weixin_form', '微信账号登录', 'https://www.taokubuy.com/shop/index.php?act=connect_wx&amp;op=index', 360);" href="javascript:void(0);"><i></i>微信</a>
+                
+      
+                
+           <!-- <a
+                  class="mr10" title="支付宝登录"
+                  href="/api.php?act=toalipay">支付宝登录</a>-->
+      
+              <span class="newreg">
+                <b></b><a class="" href="https://www.taokubuy.com/shop/index.php?act=login&amp;op=register&amp;ref_url=" target="_blank" style="padding-top:5px">注册新用户</a>
+                  </span>
+      
+            </div>
+                </div>
+            </form>
+          </div>
+              <ul class="tools">
+            
+            <li><a href="http://www.v5kf.com/public/chat/chat?sid=146733&amp;entry=5&amp;ref=link" class="chat ta_delay" target="_blank"><div class="tools_img"></div>
+                <span>聊天</span></a></li>
+            
+                  <li><a href="javascript:void(0);" id="rtoolbar_cart" class="cart ta_delay"><div class="tools_img"></div>
+                <span>购物车</span><i id="rtoobar_cart_count" class="new_msg" style="display: none;"></i></a></li>
+                        <li><a href="javascript:void(0);" id="compare" class="compare ta_delay"><div class="tools_img"></div>
+                <span>对比</span></a></li>
+                  <li><a href="javascript:void(0);" id="gotop" class="gotop ta_delay"><div class="tools_img"></div>
+                <span>顶部</span></a></li>
+          </ul>
+          <div class="content-box" id="content-compare">
+            <div class="top">
+              <h3>商品对比</h3>
+              <a href="javascript:void(0);" class="close" title="隐藏"></a>
+            </div>
+            <div id="comparelist"></div>
+          </div>
+          <div class="content-box" id="content-cart">
+            <div class="top">
+              <h3>我的购物车</h3>
+              <a href="javascript:void(0);" class="close" title="隐藏"></a>
+            </div>
+            <div id="rtoolbar_cartlist"></div>
+          </div>
+          <a id="activator" href="javascript:void(0);" class="nc-appbar-hide"></a>
+        </div>
+        <div class="nc-hidebar" id="ncHideBar">
+          <div class="nc-hidebar-bg">
+                  <div class="user-avatar">
+              <img src="https://www.taokubuy.com/data/upload/shop/common/05728119946145412.jpg">
+            </div>
+                  <div class="frame"></div>
+            <div class="show"></div>
+          </div>
+        </div>
+      </div>
+
 		<div class="home-focus-layout">
       <!-- 轮播图照片 -->
       <ul id="fullScreenSlides" class="full-screen-slides">
@@ -100,5 +202,372 @@
             <span style="opacity: 0.4;"></span>
         </div>
     </div>
+    <div class="home-sale-layout  wrapper">
+      <div class="left-layout">
+          <ul class="tabs-nav">
+            <li class="tabs-selected">
+              <i class="arrow"></i>
+              <h3>新品上市</h3>
+            </li>
+            <li class>
+              <i class="arrow"></i>
+              <h3>家用电器</h3>
+            </li>
+            <li class>
+              <i class="arrow"></i>
+              <h3>生活电器</h3>
+            </li>
+          </ul>
+          <div class="tabs-panel sale-goods-list tabs-hiddle">
+            <ul>
+              <li>
+                <dl>
+                  <dt class="good-name">
+                    <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+                  </dt>
+                    <dd class="good-thumb">
+                      <a href="" target="_blank">
+                        <img src="images/index/70_06173033747220649_240.png" alt="" />
+                      </a>
+                    </dd>
+                    <dd class="good-price">
+                      商城价：
+                      <em>￥168.00</em>
+                    </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt class="good-name">
+                    <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+                  </dt>
+                    <dd class="good-thumb">
+                      <a href="" target="_blank">
+                        <img src="images/index/70_06173033747220649_240.png" alt="" />
+                      </a>
+                    </dd>
+                    <dd class="good-price">
+                      商城价：
+                      <em>￥168.00</em>
+                    </dd>
+                </dl>
+              </li><li>
+                <dl>
+                  <dt class="good-name">
+                    <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+                  </dt>
+                    <dd class="good-thumb">
+                      <a href="" target="_blank">
+                        <img src="images/index/70_06173033747220649_240.png" alt="" />
+                      </a>
+                    </dd>
+                    <dd class="good-price">
+                      商城价：
+                      <em>￥168.00</em>
+                    </dd>
+                </dl>
+              </li><li>
+                <dl>
+                  <dt class="good-name">
+                    <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+                  </dt>
+                    <dd class="good-thumb">
+                      <a href="" target="_blank">
+                        <img src="images/index/70_06173033747220649_240.png" alt="" />
+                      </a>
+                    </dd>
+                    <dd class="good-price">
+                      商城价：
+                      <em>￥168.00</em>
+                    </dd>
+                </dl>
+              </li><li>
+                <dl>
+                  <dt class="good-name">
+                    <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+                  </dt>
+                    <dd class="good-thumb">
+                      <a href="" target="_blank">
+                        <img src="images/index/70_06173033747220649_240.png" alt="" />
+                      </a>
+                    </dd>
+                    <dd class="good-price">
+                      商城价：
+                      <em>￥168.00</em>
+                    </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs-panel sale-goods-list ">
+              <ul>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+
+              </ul>
+          </div>
+          <div class="tabs-panel sale-goods-list tabs-hiddle">
+              <ul>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                      <dl>
+                          <dt class="good-name">
+                <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+              </dt>
+                          <dd class="good-thumb">
+                              <a href="" target="_blank">
+                                  <img src="images/index/70_06173033747220649_240.png" alt="" />
+                              </a>
+                          </dd>
+                          <dd class="good-price">
+                              商城价：
+                              <em>￥168.00</em>
+                          </dd>
+                      </dl>
+                  </li>
+
+              </ul>
+          </div>
+      </div>
+      
+     
+  <div class="right-sidebar">
+    <div class="title">
+        <h3>今日秒杀</h3>
+    </div>
+    <div id="saleDiscount" class="sale-discount">
+      <ul style="left: 0px; width: 840px;">
+        <li>
+          <dl>
+            <dt class="goods-name">盛世zeepower远程距离45mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</dt>
+            <dd class="goods-thumb">
+              <a href=""> <img src="images/index/70_06153755886412998_240.png">
+              </a>
+            </dd>
+            <dd class="goods-price">¥268.00 <span class="original">¥288.00</span></dd>
+            <dd class="goods-price-discount"><em>9.3折</em></dd>
+            <dd class="time-remain" count_down="25494159">
+              <i></i>
+             <em time_id="d">295</em>天<em time_id="h">1</em>小时 <em time_id="m">42</em>分<em time_id="s">39</em>秒 </dd>
+            <dd class="goods-buy-btn"></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt class="goods-name">PMA石墨烯发热真丝眼罩 粉红色 全国</dt>
+            <dd class="goods-thumb">
+              <a href=""> 
+                 <img src="images/index/5979215473121340_240.jpg">
+              </a>
+            </dd>
+            <dd class="goods-price">¥110.00 <span class="original">¥118.00</span></dd>
+            <dd class="goods-price-discount"><em>9.3折</em></dd>
+            <dd class="time-remain" count_down="10201359"><i></i><em time_id="d">118</em>天<em time_id="h">1</em>小时 <em time_id="m">42</em>分<em time_id="s">39</em>秒 </dd>
+            <dd class="goods-buy-btn"></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt class="goods-name">海尔微波炉蒸烤箱一体机家用多功能全自动新款智能平板式正品特价</dt>
+            <dd class="goods-thumb"><a href=""> <img src="images/index/53_06179722935293939_240.jpg"></a></dd>
+            <dd class="goods-price">¥759.00 <span class="original">¥799.00</span></dd>
+            <dd class="goods-price-discount"><em>9.5折</em></dd>
+            <dd class="time-remain" count_down="4930959"><i></i><em time_id="d">57</em>天<em time_id="h">1</em>小时 <em time_id="m">42</em>分<em time_id="s">39</em>秒 </dd>
+            <dd class="goods-buy-btn"></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt class="goods-name">海尔微波炉家用小型迷你全自动多功能新款智能平板式正品特价20L</dt>
+            <dd class="goods-thumb"><a href=""> <img src="images/index/53_06179716727357069_240.jpg"></a></dd>
+            <dd class="goods-price">¥459.00 <span class="original">¥499.00</span></dd>
+            <dd class="goods-price-discount"><em>9.2折</em></dd>
+            <dd class="time-remain" count_down="4930959"><i></i><em time_id="d">57</em>天<em time_id="h">1</em>小时 <em time_id="m">42</em>分<em time_id="s">39</em>秒 </dd>
+            <dd class="goods-buy-btn"></dd>
+          </dl>
+        </li>
+      </ul>
+      <div class="arrow pre" style="opacity: 0;"></div>
+      <div class="arrow next" style="opacity: 0;"></div>
+    </div>
+  </div>
+</div>
+<div class="wrapper" style="margin-top: 10px">
+  <div class="mt10">
+    <div class="mt10">
+      <a href="" title="淘库优选自营旗舰店" target="_blank">
+        <img style="width:1200px;height:100px" border="0" src="images/index/05828064187930075.png" alt="淘库优选自营旗舰店" />
+      </a>
+    </div>
+  </div>
+</div>
+<!-- 销量按照50 排雷 -->
+<div class="home-sale-layout wrapper" style="margin-top:10px">
+  <div class="left-layout indexnewgoods" style="width: auto">
+    <div class="tabs-panel sale-goods-list" style="width: auto;">
+      <ul style="width: auto;">
+        <li>
+          <dl>
+            <dt class="good-name">
+              <a href="" target="_blank" title="盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米">盛世zeepower远程距离20mm隔空隐藏形式无线充电器xr苹果x快充板安卓华为小米</a>
+            </dt>
+            <dd class="good-thumb">
+              <a href="" target="_blank">
+                <img src="images/index/70_06173033747220649_240.png" alt="" />
+              </a>
+            </dd>
+            <dd class="good-price">
+              商城价：
+              <em>￥168.00</em>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <footer></footer>
+  <script src="js/pub_footer.js"></script>
 	</body>
 </html>
