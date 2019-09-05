@@ -1,0 +1,191 @@
+
+#loginBG01 p {
+  background: url(../images/index/bg.png) no-repeat
+          center center;
+}
+
+#loginBG02 p {
+  background: url(../images/index/bg.jpg) no-repeat
+          center center;
+}
+
+.ncsc-login-container {
+font-family: "microsoft yahei";
+background: url(../images/seller/login/login.png) no-repeat 0 0;
+width: 320px;
+height: 340px;
+padding: 10px 40px;
+margin: -180px 0 0 -200px;
+position: absolute;
+z-index: 9;
+top: 50%;
+left: 50%;
+}
+
+.ncsc-login-title {
+overflow: hidden;
+}
+
+.ncsc-login-title span {
+line-height: 16px;
+color: #999;
+}
+
+.ncsc-login-container .input {
+display: block;
+width: 320px;
+height: 72px;
+clear: both;
+position: relative;
+z-index: auto;
+}
+
+.ncsc-login-container label {
+font-size: 14px;
+line-height: 20px;
+color: #666;
+display: block;
+padding: 12px 0 4px 0;
+}
+
+.ncsc-login-container .repuired {
+line-height: 18px;
+position: absolute;
+z-index: 2;
+top: 2px;
+left: 60px;
+}
+
+.ncsc-login-container input.text {
+width: 285px;
+padding: 6px 4px 6px 29px;
+}
+
+.ncsc-login-container .ico {
+color: #CCC;
+padding-right: 4px;
+border-right: dotted 1px #DDD;
+position: absolute;
+z-index: 3;
+left: 8px;
+bottom: 8px;
+}
+
+.ncsc-login-container .login-submit {
+font: bold 14px/20px "microsoft yahei";
+color: #FFF;
+background-color: #E84723;
+width: 120px;
+height: 34px;
+border: 0;
+position: absolute;
+z-index: 1;
+bottom: 2px;
+right: 0;
+cursor: pointer;
+}
+
+.ncsc-login-container .login-submit:hover {
+opacity: .8;
+}
+
+.ncsc-login-container .code {
+background-color: #FFFFFF;
+width: 114px;
+height: 34px;
+border: solid 1px #555;
+position: absolute;
+z-index: 9;
+bottom: -38px;
+left: -3px;
+display: none;
+box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ncsc-login-container .code .arrow {
+background: url(../images/seller/login/login_code.gif) no-repeat 0 0;
+display: block;
+width: 14px;
+height: 7px;
+position: absolute;
+left: 21px;
+top: -7px;
+}
+
+.ncsc-login-container .code img {
+width: 90px;
+height: 26px;
+position: absolute;
+z-index: 1;
+top: 4px;
+left: 4px;
+}
+
+.ncsc-login-container .code .close {
+display: block;
+width: 10px;
+height: 10px;
+padding: 1px;
+position: absolute;
+z-index: 1;
+top: 4px;
+right: 4px;
+}
+
+.ncsc-login-container .code .close:hover, .ncsc-login-container .code .change:hover
+{
+background-color: #CCC;
+border-radius: 5px;
+-webkit-border-radius: 5px /*webkit*/;
+}
+
+.ncsc-login-container .code .close i {
+background: url(../images/seller/login/login_code.gif) no-repeat 0 -7px;
+display: block;
+width: 10px;
+height: 10px;
+opacity: 0.5;
+}
+
+.ncsc-login-container .code .change {
+display: block;
+width: 10px;
+height: 10px;
+padding: 1px;
+position: absolute;
+z-index: 1;
+bottom: 4px;
+right: 4px;
+}
+
+.ncsc-login-container .code .change i {
+background: url(../images/seller/login/login_code.gif) no-repeat -10px
+-7px;
+display: block;
+width: 10px;
+height: 10px;
+opacity: 0.5;
+}
+
+.ncsc-login-container .code .close:hover i, .ncsc-login-container .code .change:hover i
+{
+opacity: 1;
+}
+
+.ncsc-login-container .copyright {
+font: 9px/16px Arial;
+color: #999;
+text-align: center;
+margin-top: 30px;
+-webkit-text-size-adjust: none;
+}
+
+.ncsc-login-container .copyright a {
+color: #27A9E3;
+text-decoration: none;
+}
+
+.ncsc-login-container .copyright a:hover {
+color: #E84723;
+text-decoration: blink;
+}
