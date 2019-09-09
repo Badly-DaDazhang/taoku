@@ -2,7 +2,8 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
-	
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/footer.css">  
 	<title></title>
 	
 	<script type="text/javascript">
@@ -27,10 +28,18 @@
 <body>
 	<header class="mui-bar">
 		<div id="heder_1">
-			<a href="user_login.html"><img src="images/login/05664089558052123.png" ></a>
+			<a href="index.html">
+        <img src="images/login/05664089558052123.png" >
+      </a>
 			<div id="header_login">
-				<span><img src="images/login/05728119946145412.jpg" ></span>
-				<span class="login_text">Hi,欢迎来到淘库商城<br>还不是本站会员？立即<a href="use_reg.html">注册</a></span>
+				<span class="avatar">
+          <img src="images/login/05728119946145412.jpg" >
+        </span>
+				<span class="login_text">Hi,欢迎来到淘库商城
+          <br>
+          还不是本站会员？立即
+          <a href="use_reg.html">注册</a>
+        </span>
 			</div>
 		</div>
 	</header>
@@ -41,8 +50,16 @@
 		<div id="back">
 			<div class="login_top">
 				<ul>
-					<li>普通登陆</li>
-					<li>手机登陆</li>
+					<li>
+            <a href="javascript:;" class="tabulous_active">普通登陆
+              <i></i>
+            </a>
+          </li>
+					<li>
+            <a href="javascript:;">手机登陆
+              <i></i>
+            </a>
+          </li>
 				</ul>
 				
 			</div>
@@ -65,7 +82,7 @@
 					<dl>
 						<dt>验证码:</dt>
 						<dd>
-							<input type="text" id="yanzheng" placeholder="请输入验证码" />
+							<input type="text" maxlength="4" id="yanzheng" placeholder="请输入验证码" />
 						</dd>
 					<span >
 						<img src="images/login/05664089558052123.png"/>
@@ -86,25 +103,23 @@
 			<div id="login_foot">
 				<h4>您可以用合作伙伴账号登陆：</h4>
 				<div class="cooper">
-					<span class="qq">
-						<a href="">
+						<a href="" class="qq">
 							<i></i>
 							QQ
 						</a>
-					</span>
-					<span class="wx">
-						<a href="">
+						<a href="" class="wx">
 							<i></i>
 							微信
 						</a>
-					</span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<table></table> 
-	<footer>
-		<div id="foot_content">
+  <table></table> 
+  
+  
+	<!-- <footer> -->
+		<!-- <div id="foot_content">
 				<a href="">首页</a> |
 				<a href="">关于我们</a> |
 				<a href="">联系我们</a> |
@@ -127,7 +142,10 @@
 			<a href=""><img src="images/login/003.png" ></a>
 			<a href=""><img src="images/login/004.png" ></a>
 			<a href=""><img src="images/login/005.png" ></a>
-		</div>
-	</footer>
+		</div> -->
+  <!-- </footer> -->
+  <footer></footer>
+  <script src="js/pub_footer.js"></script>
+  <script src="js/login.js"></script>
 </body>
 </html>

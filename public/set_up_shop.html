@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/bass.css" />
@@ -8,43 +8,51 @@
   <title>Document</title>
 </head>
 <body>
-<div id="loginBG01" class="ncsc-login-bg">
-  <p class="pngFix"></p>
-</div>
+
 <div id="loginBG02" class="ncsc-login-bg" style="display: block;">
-  <p class="pngFix"></p>
+  <p></p>
 </div>
 <div class="ncsc-login-container">
     <div class="ncsc-login-title">
       <h2>淘库商城商家管理中心</h2>
       <span>请输入您注册商铺时申请的商家名称<br>
       登录密码为商城用户通用密码</span></div>
-    <form id="form_login" action="https://www.taokubuy.com/shop/index.php?act=seller_login&amp;op=login" method="post">
-      <input type="hidden" name="formhash" value="WVXoOXl3vUL49RLv2VJadqFdKI6PFVo">    <input name="nchash" type="hidden" value="77bdd63c">
-      <input type="hidden" name="form_submit" value="ok">
+    <form id="form_login" >
       <div class="input">
         <label>用户名</label>
         <span class="repuired"></span>
         <input name="seller_name" type="text" autocomplete="off" class="text" autofocus="">
-        <span class="ico"><i class="icon-user"></i></span> </div>
+        <span class="ico">
+          <i class="icon-user"></i>
+        </span> 
+      </div>
       <div class="input">
         <label>密码</label>
         <span class="repuired"></span>
-        <input name="password" type="password" autocomplete="off" class="text">
-        <span class="ico"><i class="icon-key"></i></span> </div>
+        <input name="password" type="password"  class="text">
+        <span class="ico">
+          <i class="icon-key"></i>
+        </span> 
+      </div>
       <div class="input">
         <label>验证码</label>
         <span class="repuired"></span>
-        <input type="text" name="captcha" id="captcha" autocomplete="off" class="text" style="width: 80px;" maxlength="4" size="10">
+        <input type="text" name="captcha" id="captcha" class="text" style="width: 80px;" maxlength="4" size="10">
         <div class="code">
           <div class="arrow"></div>
-          <div class="code-img"><a href="javascript:void(0)" nctype="btn_change_seccode"><img src="./我要开店_免费开网店_上淘库商城_商家管理中心登录_files/index.php" name="codeimage" border="0" id="codeimage"></a></div>
-          <a href="JavaScript:void(0);" id="hide" class="close" title=""><i></i></a> <a href="JavaScript:void(0);" class="change" nctype="btn_change_seccode" title=""><i></i></a> </div>
-        <span class="ico"><i class="icon-qrcode"></i></span>
+        </div>
+        <span class="ico">
+          <i class="icon-qrcode"></i>
+        </span>
         <input type="hidden" name="seller_login_x" value="0">
         <input type="submit" class="login-submit" value="商家登录">
       </div>
-      <div class="mt10 fr"><a href="https://www.taokubuy.com/shop/index.php?act=show_help&amp;op=index&amp;t_id=99&amp;help_id=100" title="入驻流程" target="_blank">入驻流程</a>&nbsp;&nbsp;<a href="https://www.taokubuy.com/shop/index.php?act=show_help&amp;op=index&amp;t_id=91&amp;help_id=106" title="入驻须知" target="_blank">入驻须知</a>&nbsp;&nbsp;<a href="https://www.taokubuy.com/shop/index.php?act=login&amp;op=register&amp;ref_url=https://www.taokubuy.com/shop/index.php?act=show_joinin" title="快速注册">快速注册</a>&nbsp;&nbsp;<a href="https://www.taokubuy.com/shop/index.php?act=show_joinin&amp;op=index" title="招商入驻">招商入驻</a>&nbsp;&nbsp;<a href="https://www.taokubuy.com/" title="返回首页">返回首页</a></div>
+      <div class="mt10 fr">
+        <a href="javascript:;" title="入驻流程" target="_blank">入驻流程</a>&nbsp;&nbsp;
+        <a href="javascript:;" title="入驻须知" target="_blank">入驻须知</a>&nbsp;&nbsp;
+        <a href="javascript:;" title="快速注册">快速注册</a>&nbsp;&nbsp;
+        <a href="javascript:;" title="招商入驻">招商入驻</a>&nbsp;&nbsp;
+        <a href="index.html" title="返回首页">返回首页</a></div>
     </form>
   </div>
 </body>

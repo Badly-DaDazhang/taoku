@@ -39,3 +39,6 @@ footer div{
 footer>p{
 	padding:50px
 }
+#foot_content a{
+  margin-right: 5px;
+}

@@ -24,7 +24,7 @@ CREATE TABLE tk_index_carousel(
 	href VARCHAR(64)
 );
 INSERT INTO tk_index_carousel VALUES
-	('1','images/index/web-101-101-2.jpg','免费开网店,上淘库商城！','javascript:;'),
+	('1','images/index/web-101-101-2.jpg','免费开网店,上淘库商城！','set_up_shop.html'),
 	('2','images/index/web-101-101-5.jpg','皇家龙船酒业品牌专营店','javascript:;'),
 	('3','images/index/web-101-101-4.jpg','健康鼠智能品牌旗舰店','javascript:;'),
 	('4','images/index/web-101-101-1.jpg','盛世无线充电品牌工厂店','javascript:;'),

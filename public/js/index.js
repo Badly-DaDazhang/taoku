@@ -12,12 +12,12 @@ $(function(){
       var slideshtml=``;
       for(var i=0;i<result.length;i++){
         html += `
-        <li style="background:url(${result[i].img}) center top no-repeat; z-index: 900; opacity: 0">
-                <a href="${result[i].href}"title="${result[i].title}">&nbsp;</a>
+        <li style="background:url(${result[i].img}) center top no-repeat; z-index: 3; opacity: 0">
+                <a href="${result[i].href}" z-index="920" title="${result[i].title}">&nbsp;</a>
             </li>
         `
         slideshtml+=`
-          <li class=""><a href="javascript:void(0)">${i}</a></li>
+          <li class=""><a href="javascript:;)">${i}</a></li>
         `
       }
       $("#fullScreenSlides").html(html);

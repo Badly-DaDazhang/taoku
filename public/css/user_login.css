@@ -27,14 +27,30 @@ header{
 #heder_1 a img{
 	margin-top: 10px;
 }
-#header_login{margin-left: px; 
-	float: right;		
-	margin-top: 30px;	
-	margin-left: 10px;		
+#header_login{
+  font-size: 14px;
+  color: #AAA;
+  line-height: 20px;
+  float: right;
+  height: 40px;
+  margin-top: 30px;
 }
+#header_login .avatar {
+  margin-right:6px;
+}
+
 #heder_1 span img{
 	border-radius: 50%;
-	width: 40; height: 40px ;
+	width: 40px; height: 40px ;
+}
+#header_login span{
+  vertical-align: top;
+  display: inline-block;
+}
+#header_login .login_text a{
+  font-weight: 600;
+  color:#06c ;
+  margin-left:4px;
 }
 
 /*section*/
@@ -70,15 +86,29 @@ header{
 	border-bottom: 1px solid #e6e6e6; 
 	padding-left:0px;
 }
-.login_top li{
-	
-	/*vertical-align: bottom;*/
-	width:49%;height: 40px;
-	
+#back .login_top li{
+  width:49%;
+  height: 40px;
+	display: inline-block;
 	line-height: 24px;
 	text-align: center;
 	font-size: 18px;
 }
+.login_top li a{
+  display: block ;
+  font-size:18px;
+  color:#999;
+  line-height: 24px;
+  padding-bottom:13px;
+  position: relative;
+}
+.login_top li a.tabulous_active{
+  display: block;
+  color:#c81623;
+  border-bottom: 3px solid #c81623 ; 
+}
+
+
 #login_body,#login_foot{
 	width:352px;height:267px;
 	margin-top: 30px;
@@ -107,7 +137,7 @@ header{
 }
 #login_body input{
 	
-	color:red;
+	color:black;
 	height: 28px;
 	padding: 0;
 	line-height: 52px;
@@ -169,7 +199,7 @@ button{
 #login_foot{
 	width: 340px;height: 62px;
 	margin-top: 0;
-	padding: ;
+	/* padding: ; */
 	line-height:  initial;
 }
 #login_foot h4{
@@ -177,16 +207,13 @@ button{
 	color: #333;
 }
 #login_foot a{
-	float: left;
-	height: 32px;
+  height: 32px;
 	text-decoration: none;
-	line-height: 32pz;
-	
+	line-height: 32px !important;
 	display: inline-block;
-	vertical-align: top;
+  vertical-align: top;
+  /* text-align: center; */
 	margin-right:12px ;
-
-	line-height:62px;
 	color: #aaa;
 }
 #login_foot a i{
@@ -194,6 +221,9 @@ button{
 	height: 32px;width: 32px;
 	background: url(../images/login/qq.png);
 	line-height: 32px;
+}
+#login_foot .wx  i{
+  background: url(../images/login/wx.png)
 }
 footer div{
 	text-align: center;
