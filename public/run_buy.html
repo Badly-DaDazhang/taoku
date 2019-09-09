@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="css/bass.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/home_group.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="public_top"></div>
+  <header></header>
+  <div id="public_nav"></div>
+
+  <div class="nch-breadcrumb-layout">
+    <div class="nch-breadcrumb wrapper">
+      <i class="icon-home"></i>
+      <span>
+        <a href="https://www.taokubuy.com/shop">首页</a>
+      </span>
+      <span class="arrow">&gt;</span>
+      <span>抢购</span>
+    </div>
+  </div>
+  <div class="ncg-topbar">
+    <div id="headRelative" class="ncg-topbar-wrapper">
+      <div class="title">
+        <h2> 商城抢购 </h2>
+        <div class="city"> 地区【 <a href="javascript:;" id="button_show">
+            <h3 id="show_area_name">全国</h3>
+            <i class="arrow"></i>
+          </a>】 </div>
+        <div id="list" class="list" style="display:none;">
+          <a id="button_close" class="close" href="javascript:;">×</a>
+          <ul>
+            <li><a href="javascript:;">全国</a></li>
+            <li><a href="javascript:;">天津</a></li>
+            <li><a href="javascript:;">北京</a></li>
+            <li><a href="javascript:;">鞍山</a></li>
+            <li><a href="javascript:;">安顺</a></li>
+            <li><a href="javascript:;">阿坝</a></li>
+            <li><a href="javascript:;">阿拉善</a></li>
+            <li><a href="javascript:;">包头</a></li>
+            <li><a href="javascript:;">保定</a></li>
+            <li><a href="javascript:;">巴中</a></li>
+            <li><a href="javascript:;">成都</a></li>
+            <li><a href="javascript:;">重庆</a></li>
+            <li><a href="javascript:;">常州</a></li>
+            <li><a href="javascript:;">长沙</a></li>
+            <li><a href="javascript:;">长春</a></li>
+            <li><a href="javascript:;">东莞</a></li>
+            <li><a href="javascript:;">大连</a></li>
+            <li><a href="javascript:;">东营</a></li>
+            <li><a href="javascript:;">大庆</a></li>
+            <li><a href="javascript:;">大同</a></li>
+            <li><a href="javascript:;">恩施</a></li>
+            <li><a href="javascript:;">鄂州</a></li>
+            <li><a href="javascript:;">鄂尔多斯</a></li>
+            <li><a href="javascript:;">福州</a></li>
+            <li><a href="javascript:;">佛山</a></li>
+            <li><a href="javascript:;">抚顺</a></li>
+            <li><a href="javascript:;">阜阳</a></li>
+            <li><a href="javascript:;">抚州</a></li>
+            <li><a href="javascript:;">广州</a></li>
+            <li><a href="javascript:;">贵阳</a></li>
+            <li><a href="javascript:;">桂林</a></li>
+            <li><a href="javascript:;">赣州</a></li>
+            <li><a href="javascript:;">广元</a></li>
+            <li><a href="javascript:;">杭州</a></li>
+            <li><a href="javascript:;">哈尔滨</a></li>
+            <li><a href="javascript:;">合肥</a></li>
+            <li><a href="javascript:;">邯郸</a></li>
+            <li><a href="javascript:;">惠州</a></li>
+            <li><a href="javascript:;">济南</a></li>
+            <li><a href="javascript:;">济宁</a></li>
+            <li><a href="javascript:;">嘉兴</a></li>
+            <li><a href="javascript:;">昆明</a></li>
+            <li><a href="javascript:;">昆山</a></li>
+            <li><a href="javascript:;">喀什</a></li>
+            <li><a href="javascript:;">克拉玛依</a></li>
+            <li><a href="javascript:;">兰州</a></li>
+            <li><a href="javascript:;">临沂</a></li>
+            <li><a href="javascript:;">连云港</a></li>
+            <li><a href="javascript:;">马鞍山</a></li>
+            <li><a href="javascript:;">绵阳</a></li>
+            <li><a href="javascript:;">茂名</a></li>
+            <li><a href="javascript:;">南京</a></li>
+            <li><a href="javascript:;">宁波</a></li>
+            <li><a href="javascript:;">南通</a></li>
+            <li><a href="javascript:;">萍乡</a></li>
+            <li><a href="javascript:;">平顶山</a></li>
+            <li><a href="javascript:;">莆田</a></li>
+            <li><a href="javascript:;">青岛</a></li>
+            <li><a href="javascript:;">泉州</a></li>
+            <li><a href="javascript:;">秦皇岛</a></li>
+            <li><a href="javascript:;">日照</a></li>
+            <li><a href="javascript:;">日喀则</a></li>
+            <li><a href="javascript:;">上海</a></li>
+            <li><a href="javascript:;">深圳</a></li>
+            <li><a href="javascript:;">沈阳</a></li>
+            <li><a href="javascript:;">太原</a></li>
+            <li><a href="javascript:;">泰安</a></li>
+            <li><a href="javascript:;">武汉</a></li>
+            <li><a href="javascript:;">无锡</a></li>
+            <li><a href="javascript:;">温州</a></li>
+            <li><a href="javascript:;">西安</a></li>
+            <li><a href="javascript:;">徐州</a></li>
+            <li><a href="javascript:;">扬州</a></li>
+            <li><a href="javascript:;">烟台</a></li>
+            <li><a href="javascript:;">盐城</a></li>
+            <li><a href="javascript:;">郑州</a></li>
+            <li><a href="javascript:;">镇江</a></li>
+            <li><a href="javascript:;">中山</a></li>
+            <li><a href="javascript:;">阿里</a></li>
+            <li><a href="javascript:;">安康</a></li>
+            <li><a href="javascript:;">阿克苏</a></li>
+            <li><a href="javascript:;">安庆</a></li>
+            <li><a href="javascript:;">阿勒泰</a></li>
+            <li><a href="javascript:;">安阳</a></li>
+            <li><a href="javascript:;">澳门</a></li>
+            <li><a href="javascript:;">巴州</a></li>
+            <li><a href="javascript:;">亳州</a></li>
+            <li><a href="javascript:;">滨州</a></li>
+            <li><a href="javascript:;">博尔塔拉</a></li>
+            <li><a href="javascript:;">毕节</a></li>
+            <li><a href="javascript:;">保山</a></li>
+            <li><a href="javascript:;">本溪</a></li>
+            <li><a href="javascript:;">百色</a></li>
+            <li><a href="javascript:;">宝鸡</a></li>
+            <li><a href="javascript:;">巴彦淖尔</a></li>
+            <li><a href="javascript:;">北海</a></li>
+            <li><a href="javascript:;">北海</a></li>
+            <li><a href="javascript:;">白城</a></li>
+            <li><a href="javascript:;">白银</a></li>
+            <li><a href="javascript:;">承德</a></li>
+            <li><a href="javascript:;">池州</a></li>
+            <li><a href="javascript:;">昌都</a></li>
+            <li><a href="javascript:;">朝阳</a></li>
+            <li><a href="javascript:;">滁州</a></li>
+            <li><a href="javascript:;">常德</a></li>
+            <li><a href="javascript:;">郴州</a></li>
+            <li><a href="javascript:;">沧州</a></li>
+            <li><a href="javascript:;">昌吉</a></li>
+            <li><a href="javascript:;">潮州</a></li>
+            <li><a href="javascript:;">崇左</a></li>
+            <li><a href="javascript:;">巢湖</a></li>
+            <li><a href="javascript:;">长治</a></li>
+            <li><a href="javascript:;">楚雄</a></li>
+            <li><a href="javascript:;">赤峰</a></li>
+            <li><a href="javascript:;">定西</a></li>
+            <li><a href="javascript:;">德宏</a></li>
+            <li><a href="javascript:;">大兴安岭</a></li>
+            <li><a href="javascript:;">丹东</a></li>
+            <li><a href="javascript:;">德州</a></li>
+            <li><a href="javascript:;">达州</a></li>
+            <li><a href="javascript:;">迪庆</a></li>
+            <li><a href="javascript:;">德阳</a></li>
+            <li><a href="javascript:;">大理</a></li>
+            <li><a href="javascript:;">阜新</a></li>
+            <li><a href="javascript:;">防城港</a></li>
+            <li><a href="javascript:;">抚州</a></li>
+            <li><a href="javascript:;">阜阳</a></li>
+            <li><a href="javascript:;">贵港</a></li>
+            <li><a href="javascript:;">广安</a></li>
+            <li><a href="javascript:;">甘孜</a></li>
+            <li><a href="javascript:;">甘南</a></li>
+            <li><a href="javascript:;">固原</a></li>
+            <li><a href="javascript:;">果洛</a></li>
+            <li><a href="javascript:;">广元</a></li>
+            <li><a href="javascript:;">葫芦岛</a></li>
+            <li><a href="javascript:;">鹤壁</a></li>
+            <li><a href="javascript:;">黄石</a></li>
+            <li><a href="javascript:;">黄冈</a></li>
+            <li><a href="javascript:;">汉中</a></li>
+            <li><a href="javascript:;">红河</a></li>
+            <li><a href="javascript:;">河源</a></li>
+            <li><a href="javascript:;">衡水</a></li>
+            <li><a href="javascript:;">呼伦贝尔</a></li>
+            <li><a href="javascript:;">河池</a></li>
+            <li><a href="javascript:;">怀化</a></li>
+            <li><a href="javascript:;">贺州</a></li>
+            <li><a href="javascript:;">海西</a></li>
+            <li><a href="javascript:;">黄山</a></li>
+            <li><a href="javascript:;">淮南</a></li>
+            <li><a href="javascript:;">淮安</a></li>
+            <li><a href="javascript:;">哈密</a></li>
+            <li><a href="javascript:;">和田</a></li>
+            <li><a href="javascript:;">黑河</a></li>
+            <li><a href="javascript:;">九江</a></li>
+            <li><a href="javascript:;">荆门</a></li>
+            <li><a href="javascript:;">晋中</a></li>
+            <li><a href="javascript:;">揭阳</a></li>
+            <li><a href="javascript:;">晋城</a></li>
+            <li><a href="javascript:;">济源</a></li>
+            <li><a href="javascript:;">鸡西</a></li>
+            <li><a href="javascript:;">金昌</a></li>
+            <li><a href="javascript:;">酒泉</a></li>
+            <li><a href="javascript:;">佳木斯</a></li>
+            <li><a href="javascript:;">吉安</a></li>
+            <li><a href="javascript:;">景德镇</a></li>
+            <li><a href="javascript:;">江门</a></li>
+            <li><a href="javascript:;">锦州</a></li>
+            <li><a href="javascript:;">吉林</a></li>
+            <li><a href="javascript:;">荆州</a></li>
+            <li><a href="javascript:;">克州</a></li>
+            <li><a href="javascript:;">开封</a></li>
+            <li><a href="javascript:;">乐山</a></li>
+            <li><a href="javascript:;">泸州</a></li>
+            <li><a href="javascript:;">来宾</a></li>
+            <li><a href="javascript:;">娄底</a></li>
+            <li><a href="javascript:;">林芝</a></li>
+            <li><a href="javascript:;">临夏</a></li>
+            <li><a href="javascript:;">丽水</a></li>
+            <li><a href="javascript:;">吕梁</a></li>
+            <li><a href="javascript:;">漯河</a></li>
+            <li><a href="javascript:;">莱芜</a></li>
+            <li><a href="javascript:;">辽阳</a></li>
+            <li><a href="javascript:;">辽源</a></li>
+            <li><a href="javascript:;">拉萨</a></li>
+            <li><a href="javascript:;">陇南</a></li>
+            <li><a href="javascript:;">临沧</a></li>
+            <li><a href="javascript:;">丽江</a></li>
+            <li><a href="javascript:;">六安</a></li>
+            <li><a href="javascript:;">凉山</a></li>
+            <li><a href="javascript:;">六盘水</a></li>
+            <li><a href="javascript:;">龙岩</a></li>
+            <li><a href="javascript:;">廊坊</a></li>
+            <li><a href="javascript:;">眉山</a></li>
+            <li><a href="javascript:;">梅州</a></li>
+            <li><a href="javascript:;">牡丹江</a></li>
+            <li><a href="javascript:;">那曲</a></li>
+            <li><a href="javascript:;">南阳</a></li>
+            <li><a href="javascript:;">南平</a></li>
+            <li><a href="javascript:;">怒江</a></li>
+            <li><a href="javascript:;">内江</a></li>
+            <li><a href="javascript:;">宁德</a></li>
+            <li><a href="javascript:;">南充</a></li>
+            <li><a href="javascript:;">南昌</a></li>
+            <li><a href="javascript:;">盘锦</a></li>
+            <li><a href="javascript:;">普洱</a></li>
+            <li><a href="javascript:;">平凉</a></li>
+            <li><a href="javascript:;">攀枝花</a></li>
+            <li><a href="javascript:;">濮阳</a></li>
+            <li><a href="javascript:;">清远</a></li>
+            <li><a href="javascript:;">七台河</a></li>
+            <li><a href="javascript:;">黔东南</a></li>
+            <li><a href="javascript:;">曲靖</a></li>
+            <li><a href="javascript:;">黔南</a></li>
+            <li><a href="javascript:;">钦州</a></li>
+            <li><a href="javascript:;">黔西南</a></li>
+            <li><a href="javascript:;">衢州</a></li>
+            <li><a href="javascript:;">商洛</a></li>
+            <li><a href="javascript:;">宿州</a></li>
+            <li><a href="javascript:;">汕头</a></li>
+            <li><a href="javascript:;">双鸭山</a></li>
+            <li><a href="javascript:;">石嘴山</a></li>
+            <li><a href="javascript:;">三明</a></li>
+            <li><a href="javascript:;">宿迁</a></li>
+            <li><a href="javascript:;">三峡</a></li>
+            <li><a href="javascript:;">四平</a></li>
+            <li><a href="javascript:;">汕尾</a></li>
+            <li><a href="javascript:;">随州</a></li>
+            <li><a href="javascript:;">朔州</a></li>
+            <li><a href="javascript:;">商丘</a></li>
+            <li><a href="javascript:;">遂宁</a></li>
+            <li><a href="javascript:;">邵阳</a></li>
+            <li><a href="javascript:;">山南</a></li>
+            <li><a href="javascript:;">三门峡</a></li>
+            <li><a href="javascript:;">十堰</a></li>
+            <li><a href="javascript:;">上饶</a></li>
+            <li><a href="javascript:;">松原</a></li>
+            <li><a href="javascript:;">绥化</a></li>
+            <li><a href="javascript:;">韶关</a></li>
+            <li><a href="javascript:;">通化</a></li>
+            <li><a href="javascript:;">铁岭</a></li>
+            <li><a href="javascript:;">通辽</a></li>
+            <li><a href="javascript:;">天水</a></li>
+            <li><a href="javascript:;">吐鲁番</a></li>
+            <li><a href="javascript:;">铜仁</a></li>
+            <li><a href="javascript:;">台北</a></li>
+            <li><a href="javascript:;">铜川</a></li>
+            <li><a href="javascript:;">铜陵</a></li>
+            <li><a href="javascript:;">塔城</a></li>
+            <li><a href="javascript:;">泰州</a></li>
+            <li><a href="javascript:;">乌海</a></li>
+            <li><a href="javascript:;">文山</a></li>
+            <li><a href="javascript:;">乌兰察布</a></li>
+            <li><a href="javascript:;">渭南</a></li>
+            <li><a href="javascript:;">武威</a></li>
+            <li><a href="javascript:;">吴忠</a></li>
+            <li><a href="javascript:;">梧州</a></li>
+            <li><a href="javascript:;">乌鲁木齐</a></li>
+            <li><a href="javascript:;">潍坊</a></li>
+            <li><a href="javascript:;">威海</a></li>
+            <li><a href="javascript:;">芜湖</a></li>
+            <li><a href="javascript:;">许昌</a></li>
+            <li><a href="javascript:;">咸宁</a></li>
+            <li><a href="javascript:;">信阳</a></li>
+            <li><a href="javascript:;">香港</a></li>
+            <li><a href="javascript:;">宣城</a></li>
+            <li><a href="javascript:;">咸阳</a></li>
+            <li><a href="javascript:;">忻州</a></li>
+            <li><a href="javascript:;">湘西</a></li>
+            <li><a href="javascript:;">新乡</a></li>
+            <li><a href="javascript:;">邢台</a></li>
+            <li><a href="javascript:;">兴安</a></li>
+            <li><a href="javascript:;">锡林郭勒</a></li>
+            <li><a href="javascript:;">湘潭</a></li>
+            <li><a href="javascript:;">新余</a></li>
+            <li><a href="javascript:;">西双版纳</a></li>
+            <li><a href="javascript:;">孝感</a></li>
+            <li><a href="javascript:;">伊春</a></li>
+            <li><a href="javascript:;">阳江</a></li>
+            <li><a href="javascript:;">延边</a></li>
+            <li><a href="javascript:;">云浮</a></li>
+            <li><a href="javascript:;">榆林</a></li>
+            <li><a href="javascript:;">延安</a></li>
+            <li><a href="javascript:;">阳泉</a></li>
+            <li><a href="javascript:;">玉溪</a></li>
+            <li><a href="javascript:;">益阳</a></li>
+            <li><a href="javascript:;">宜宾</a></li>
+            <li><a href="javascript:;">永州</a></li>
+            <li><a href="javascript:;">营口</a></li>
+            <li><a href="javascript:;">宜春</a></li>
+            <li><a href="javascript:;">玉树</a></li>
+            <li><a href="javascript:;">伊犁</a></li>
+            <li><a href="javascript:;">雅安</a></li>
+            <li><a href="javascript:;">鹰潭</a></li>
+            <li><a href="javascript:;">银川</a></li>
+            <li><a href="javascript:;">枣庄</a></li>
+            <li><a href="javascript:;">中卫</a></li>
+            <li><a href="javascript:;">资阳</a></li>
+            <li><a href="javascript:;">张家口</a></li>
+            <li><a href="javascript:;">驻马店</a></li>
+            <li><a href="javascript:;">周口</a></li>
+            <li><a href="javascript:;">张家界</a></li>
+            <li><a href="javascript:;">昭通</a></li>
+            <li><a href="javascript:;">张掖</a></li>
+            <li><a href="javascript:;">肇庆</a></li>
+            <li><a href="javascript:;">湛江</a></li>
+            <li><a href="javascript:;">厦门</a></li>
+            <li><a href="javascript:;">宁德</a></li>
+            <li><a href="javascript:;">三明</a></li>
+            <li><a href="javascript:;">南平</a></li>
+            <li><a href="javascript:;">漳州</a></li>
+            <li><a href="javascript:;">龙岩</a></li>
+            <li><a href="javascript:;">龙岩</a></li>
+            <li><a href="javascript:;">龙岩</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <li>
+          <a href="javascript:;;op=index" class="current">抢购首页</a>
+        </li>
+        <li>
+          <a href="javascript:;;op=groupbuy_list">线上抢</a></li>
+        <li>
+          <a href="javascript:;;op=vr_groupbuy_list">虚拟抢</a></li>
+      </ul>
+    </div>
+  </div>
+  <link href="./淘库商城5_files/home_group.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .nch-breadcrumb-layout {
+      display: none;
+    }
+  </style>
+  <div class="nch-breadcrumb-layout" style="display: block;">
+    <div class="nch-breadcrumb wrapper">
+      <i class="icon-home"></i>
+      <span>
+        <a href="https://www.taokubuy.com/shop">首页</a>
+      </span>
+      <span class="arrow">&gt;</span>
+      <span>商城抢购</span></div>
+  </div>
+  <div class="ncg-container">
+    <div class="ncg-category" id="ncgCategory">
+      <h3>线上抢</h3>
+      <ul>
+        <li><a href="javascript:;">家用电器</a>
+        </li>
+        <li><a href="javascript:;">手机数码</a>
+        </li>
+        <li><a href="javascript:;">办公电脑</a>
+        </li>
+        <li><a href="javascript:;">智能设备</a>
+        </li>
+        <li><a href="javascript:;">服装服饰</a>
+        </li>
+        <li><a href="javascript:;">美妆护肤</a>
+        </li>
+      </ul>
+      <h3>虚拟抢</h3>
+      <ul>
+        <li><a href="javascript:;">水票</a>
+        </li>
+        <li><a href="javascript:;">蟹票</a>
+        </li>
+        <li><a href="javascript:;">月饼票</a>
+        </li>
+        <li><a href="javascript:;">粽子票</a>
+        </li>
+        <li><a href="javascript:;">加油卡</a>
+        </li>
+        <li><a href="javascript:;">购物卡</a>
+        </li>
+      </ul>
+    </div>
+    <div class="ncg-content">
+      <div class="ncg-slides-banner">
+        <ul id="fullScreenSlides" class="full-screen-slides">
+          <li style="z-index: 900; display: none;"><a href="javascript:;" target="_blank"><img
+                src="./淘库商城5_files/05983820582710918.jpg" rel="lazy" data-url="" style="display: inline;"></a>
+          </li>
+          <li style="display: none; z-index: 900;"><a href="javascript:;" target="_blank"><img
+                src="./淘库商城5_files/05983820582727527.jpg" rel="lazy" data-url="" style="display: inline;"></a>
+          </li>
+          <li style="display: list-item; z-index: 800;">
+            <a href="javascript:;" target="_blank"><img src="./淘库商城5_files/05983820582721153.jpg" rel="lazy" data-url=""
+                style="display: inline;">
+            </a>
+          </li>
+          <li style="display: none; z-index: 900;"><a href="javascript:;" target="_blank"><img
+                src="./淘库商城5_files/05983820582733558.jpg" rel="lazy" data-url="" style="display: inline;"></a>
+          </li>
+        </ul>
+        <ul class="full-screen-slides-pagination">
+          <li class=""><a href="javascript:;">1</a></li>
+          <li class=""><a href="javascript:;">2</a></li>
+          <li class="current"><a href="javascript:;">3</a></li>
+          <li class=""><a href="javascript:;">4</a></li>
+        </ul>
+        <div class="banner-arrow">
+          <div class="arrow pre" style="opacity: 0;"></div>
+          <div class="arrow next" style="opacity: 0;"></div>
+        </div>
+      </div>
+      <div class="group-list mt20">
+        <div class="ncg-recommend-title">
+          <h3>线上抢购推荐</h3>
+          <a href="javascript:;" class="more">查看更多</a>
+        </div>
+        <ul>
+          <li class="online">
+            <div class="ncg-list-content"> <a title="维达纸品限量抢购活动" href="javascript:;" class="pic-thumb"
+                target="_blank"><img src="./淘库商城5_files/28_05976118459862072_mid.png" rel="lazy" data-url="" alt=""
+                  style="display: inline;"></a>
+              <h3 class="title"><a title="维达纸品限量抢购活动" href="javascript:;" target="_blank">维达纸品限量抢购活动</a></h3>
+              <div class="item-prices"> <span class="price"><i>¥</i>19<em>.90</em></span>
+                <div class="dock"><span class="limit-num">6.68&nbsp;折</span> <del class="orig-price">¥29.80</del></div>
+                <span class="sold-num"><em>2016</em>件已购买</span><a href="javascript:;" target="_blank"
+                  class="buy-button">我要抢</a>
+              </div>
+            </div>
+          </li>
+          <li class="online">
+            <div class="ncg-list-content">
+              <a title="PMA新品限量抢购活动" href="javascript:;" class="pic-thumb" target="_blank">
+                <img src="./淘库商城5_files/28_05979970680898215_mid.png" rel="lazy" data-url="" alt=""
+                  style="display: inline;">
+              </a>
+              <h3 class="title">
+                <a title="PMA新品限量抢购活动" href="javascript:;" target="_blank">PMA新品限量抢购活动</a>
+              </h3>
+              <div class="item-prices">
+                <span class="price">
+                  <i>¥</i>258
+                  <em>.00</em>
+                </span>
+                <div class="dock">
+                  <span class="limit-num">9.25&nbsp;折</span>
+                  <del class="orig-price">¥279.00</del>
+                </div>
+                <span class="sold-num">
+                  <em>64</em>件已购买</span>
+                <a href="javascript:;" target="_blank" class="buy-button">我要抢</a>
+              </div>
+            </div>
+          </li>
+          <li class="online">
+            <div class="ncg-list-content">
+              <a title="远距离隔空无线充电器新品开抢" href="javascript:;" class="pic-thumb" target="_blank">
+                <img src="./淘库商城5_files/70_06156386201012781_mid.png" rel="lazy" data-url="" alt=""
+                  style="display: inline;">
+              </a>
+              <h3 class="title">
+                <a title="远距离隔空无线充电器新品开抢" href="javascript:;" target="_blank">远距离隔空无线充电器新品开抢</a>
+              </h3>
+              <div class="item-prices">
+                <span class="price">
+                  <i>¥</i>268
+                  <em>.00</em>
+                </span>
+                <div class="dock">
+                  <span class="limit-num">9.31&nbsp;折</span>
+                  <del class="orig-price">¥288.00</del>
+                </div>
+                <span class="sold-num">
+                  <em>132</em>件已购买
+                </span><a href="javascript:;" target="_blank" class="buy-button">我要抢</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="group-list mt30">
+        <div class="ncg-recommend-title">
+          <h3>虚拟抢购推荐</h3>
+          <a href="" class="more">查看更多</a>
+        </div>
+        <div class="norecommend">暂无虚拟抢购推荐</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="clear: both;"></div>
+  <div id="web_chat_dialog" style="display: none;float:right;"></div>
+  <object width="1" height="1" style="position: absolute; left: -1px;" id="msg_audio"
+    classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+    <param value="javascript:;" name="movie">
+    <param value="always" name="allowscriptaccess">
+    <embed width="1" height="1" allowscriptaccess="always" src="javascript:;" name="msg_audio">
+  </object>
+  <a id="chat_login" href="javascript:;" style="display: none;"></a>
+  <script src="js/run_buy.js"></script>
+  <script src="js/pub_top.js"></script>
+  <script src="js/pub_nav.js"></script>
+  <script src="js/pub_header.js"></script>
+</body>
+
+</html>
