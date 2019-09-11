@@ -175,7 +175,8 @@ a:link{
  dd input{
 	width: 290px;
 	height:52px;
-	padding: 0;
+  padding: 0;
+  font-size: 14px;
   color:black;
 
 }
