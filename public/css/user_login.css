@@ -102,10 +102,27 @@ header{
   padding-bottom:13px;
   position: relative;
 }
+.login_top li a i{
+  font-size: 0;
+  line-height: 0;
+  border-color:#c81623 transparent transparent transparent;
+  border-style: solid dashed dashed dashed;
+  border-width: 7px;
+  width: 0;
+  height: 0;
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: -17px;
+  margin-left: -4px;
+}
 .login_top li a.tabulous_active{
   display: block;
   color:#c81623;
   border-bottom: 3px solid #c81623 ; 
+}
+.login_top li a.tabulous_active i{
+  display: block;
 }
 
 
@@ -229,4 +246,9 @@ footer div{
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
+}
+
+/* 底部保障 */
+footer> .ftft{
+  display: none;
 }

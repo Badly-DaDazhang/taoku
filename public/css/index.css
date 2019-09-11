@@ -149,7 +149,82 @@
   clear: both;
   padding: 2px 0 2px 11px;
 }
+.top_r .tel dd {
+  width: 222px;
+  padding: 5px;
+  text-align: center;
+}
+.top_r .tel dd .qrcode{
+  width: 120px;
+  text-align: center;
+  float: left
+}
+.top_r .tel dd .qrcode img{
+  display: block;
+  max-width: 120px;
+  max-height: 120px;
+}
 
+.top_r .tel dd .hint{
+  width: 100px;
+  float:right;
+  text-align: center;
+}
+.top_r .tel dd .hint h4{
+  font-size:14px;
+  line-height: 24px;
+  font-weight: 600;
+  color:#c81623;
+}
+.top_r .tel dd .addurl{
+  width: 90px;
+  clear: right;
+  float: right;
+  text-align: left;
+  
+}
+.top_r .tel dd .addurl a{
+  display: block;
+  clear: both;
+  width: 70px;
+  height: 16px;
+  line-height: 16px;
+  border: solid 1px #ddd;
+  background-color: #f5f5f5;
+  margin-top:5px;
+  padding: 5px 9px;
+}
+
+/* .top_r .tel dd .addurl a i{
+  text-decoration: inherit;
+  display: inline-block;
+  /* speak:none; 
+} */
+.top_r .weixin>dt{
+  background:url("../images/ico/weixin.png") no-repeat 0 8px;
+  padding-left: 20px;
+}
+.top_r .weixin dd{
+  width: 100%;
+  padding: 5px;
+  left: auto;
+  text-align: center;
+  right: 0
+}
+.top_r .weixin dd h4{
+  color:#f98016;
+  text-align: center;
+  margin: 10px 0 10px 0 ;
+  font-size:12px;
+}
+.top_r .weixin dd img{
+  width:96px;
+  height: 96px;
+  /* margin: 10px 0 ; */
+  margin-left: -4px;
+
+  vertical-align: middle;
+}
 .public_header {
   width: 100%;
   height: 100px;
@@ -826,7 +901,7 @@ ul.site-menu>li a {
   z-index: 900 !important;
 }
 
-.full-screen-slides li a {
+.home-focus-layout .full-screen-slides li a {
   display: block;
   width: 776px;
   height: 543px;
@@ -837,7 +912,7 @@ ul.site-menu>li a {
   left: 50%;
 }
 
-.full-screen-slides-pagination {
+.home-focus-layout .full-screen-slides-pagination {
   font-size: 0;
   text-align: center;
   display: block;
@@ -852,7 +927,7 @@ ul.site-menu>li a {
   z-index: 9;
 }
 
-.full-screen-slides-pagination li {
+.home-focus-layout .full-screen-slides-pagination li {
   display: inline-block;
   list-style: none;
   border-radius: 50%;
@@ -863,7 +938,7 @@ ul.site-menu>li a {
   background: rgba(0, 0, 0, .25);
 }
 
-.full-screen-slides-pagination li a {
+.home-focus-layout .full-screen-slides-pagination li a {
   display: block;
   width: 18px;
   height: 18px;
@@ -876,7 +951,7 @@ ul.site-menu>li a {
   text-indent: -9999px;
 }
 
-.full-screen-slides-pagination .current {
+.home-focus-layout .full-screen-slides-pagination .current {
   background: #f30;
 }
 

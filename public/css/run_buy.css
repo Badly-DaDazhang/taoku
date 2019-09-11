@@ -2,6 +2,8 @@
 body { background-color: #FEFEFE;}
 .nc-appbar-tabs a.compare { display: none !important;}/*抢购页面去除侧边栏对比*/
 /* 按钮
+
+
 -------------------------------------------*/
 a.ncg-btn-mini { font: normal 12px/20px "Microsoft Yahei"; color: #777; background-color: #F5F5F5; text-align: center; vertical-align: middle; display: inline-block; height: 20px; padding: 0 10px; margin-right: 2px; border-style: solid; border-width: 1px; border-color: #DCDCDC #DCDCDC #B3B3B3 #DCDCDC; cursor: pointer;}
 a:hover.ncg-btn-mini { text-decoration: none; color: #333; background-color: #E6E6E6;border-color: #CFCFCF #CFCFCF #B3B3B3 #CFCFCF;}
@@ -22,7 +24,13 @@ a:hover.ncg-btn-green { background-color: #51A351; border-color: #499249 #499249
 a:hover.ncg-btn-orange { background-color: #F89406; border-color: #DF8505 #DF8505 #BA6F04 #DF8505;}
 a:hover.ncg-btn-red { background-color: #BD362F; border-color: #AA312A #AA312A #8E2823 #AA312A;}
 a:hover.ncg-btn-black { background-color: #222222; border-color: #1F1F1F #1F1F1F #191919 #1F1F1F;}
-
+/* 公共导航栏 */
+.public_nav_layout .category .menu{
+  display: none;
+}
+.public_nav_layout .all-category:hover .menu{
+  display: block;
+}
 /*抢购顶部名称以及地区选择列表*/
 .ncg-header { width: 1000px; height: 0; margin: 0 auto; position: relative; z-index: 999;}
 .ncg-header .title { background-color: #FFF; position: absolute; z-index: 1; top: -156px; left: 230px;}
@@ -265,13 +273,11 @@ a:hover.ncg-btn-black { background-color: #222222; border-color: #1F1F1F #1F1F1F
 .ncg-store { margin-bottom: 10px;}
 .ncg-store .title { font: 700 14px/20px "microsoft yahei"; color: #FFF; background-color: #C81623; height: 20px; padding: 8px 10px;}
 .ncg-store .content { background-color: #FFF; border: solid #D7D7D7; border-width: 0 1px 1px;}
-.ncg-store-info { }
 .ncg-store-info dl { font-size: 0; *word-spacing:-1px/*IE6、7*/; border-bottom: solid 1px #D7D7D7;}
 .ncg-store-info dl dt, .ncg-store-info dl dd { font-size: 12px; vertical-align: top; letter-spacing: normal; word-spacing: normal; display: inline-block; *display: inline/*IE7*/; height: 20px; padding: 6px 0; zoom:1;}
 .ncg-store-info dl dt { color: #555; text-align: right; width: 35%;}
 .ncg-store-info dl dd { width: 65%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .ncg-store-info dl dd.auto { height: auto; white-space: normal;}
-
 .ncg-store-info .all-rate .rating { background: url(../images/2014grate.png) no-repeat 0 -18px ; vertical-align: middle; display: inline-block;  *display: inline/*IE7*/; width: 79px; height: 17px; zoom: 1;}
 .ncg-store-info .all-rate .rating span { background: url(../images/2014grate.png) no-repeat 100% 0; display: block; height: 18px;}
 .ncg-store-info .all-rate em { color: #DA542E; font-weight: 600; vertical-align: middle; margin: 0 5px;}
@@ -312,7 +318,7 @@ a:hover.ncg-btn-black { background-color: #222222; border-color: #1F1F1F #1F1F1F
 .ncg-group-command .item .price { font-weight: 600; color: #c00; vertical-align: top; display: inline-block;  width: 50px; margin-left: 8px; overflow: hidden; zoom: 1;}
 .ncg-group-command .item .buy { vertical-align: top; display: inline-block;  width: 75px; overflow: hidden; zoom: 1;}
 .ncg-group-command .item .buy em { font-weight: 600; color: #c00; margin-right: 2px;}
-.ncg-group-command .item a { line-height: 16px; color: #FFF; background-color: #C81623; display: inline-block;  float: right; padding: 2px 4px; margin-right: 5px; border-radius: 3px; zoom: 1;}
+.ncg-group-command .item a { line-height: 16px; color: #FFF; background-color: #C81623;  float: right; padding: 2px 4px; margin-right: 5px; border-radius: 3px; zoom: 1;}
 .ncg-group-command .item a:hover { background-color: #CA3300; text-decoration: none;}
 /*无内容*/
 .no-buyer { font: lighter 14px/24px "microsoft yahei"; color: #999; text-align: center; padding: 80px 0;}
@@ -349,8 +355,7 @@ a:hover.ncg-btn-black { background-color: #222222; border-color: #1F1F1F #1F1F1F
 .nc-login-api .bottomthird {
  float:left;
 }
-.nc-login-api span.newreg b {
-}
+
 .nc-login-api span.newreg a {
  float:right;
 }
@@ -362,4 +367,8 @@ a:hover.ncg-btn-black { background-color: #222222; border-color: #1F1F1F #1F1F1F
  background: url(../images/pwd-icons-new.png) -104px -75px no-repeat;
  vertical-align: middle;
  margin-right: 1px;
+}
+/* 底部保障 */
+footer> .ftft{
+  display: none;
 }
