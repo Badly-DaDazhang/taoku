@@ -11,6 +11,15 @@ body{
     background: none 0px 0px repeat scroll rgb(255, 255, 255);
     min-width: 1200px;
 }
+/* 加载页面定位 */
+#public_top{
+  position: relative;
+  z-index:150;
+}
+header{
+  position: relative;
+  z-index: 140;
+}
 html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input {
     padding: 0;
     margin: 0;

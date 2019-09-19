@@ -257,7 +257,7 @@
   width: 500px;
 }
 
-.tab {
+.public_search .tab {
   position: absolute;
   width: 60px;
   height: 36px;
@@ -273,7 +273,7 @@
   box-sizing: content-box;
 }
 
-.tab li {
+.public_search .tab li {
   padding: 0 1px;
   height: 36px;
   line-height: 36px;
@@ -283,7 +283,7 @@
   border-right: 1px solid #ddd;
 }
 
-.tab .store_list {
+.public_search .tab .store_list {
   display: none
 }
 
