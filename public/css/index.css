@@ -378,12 +378,15 @@
 
 .head-user-menu dl dd {
   background-color: #FFF;
-  /*display: none;*/
+  display: none;
   border: solid 1px #F0F0F0;
   position: absolute;
   z-index: 1;
   top: 40px;
   right: 0;
+}
+.head-user-menu dl:hover dd{
+  display:block !important;
 }
 
 .head-user-menu .my_mall {
@@ -413,9 +416,9 @@
 
 
 
-.head-user-menu .my_cart {
-  width: 108px;
-}
+/* .head-user-menu .my_cart {
+  width: 124px;
+} */
 
 .head-user-menu dl dt i {
   font-size: 0px;
@@ -559,7 +562,28 @@
   text-align: center;
   width: 100%;
 }
-
+.head-user-menu dl dd .incart-goods .no-order{
+  margin: 20px 0 ;
+}
+.head-user-menu dl dd .ckeckout{
+  background-color:#f0f0f0;
+  text-align: right;
+  padding: 8px;
+  overflow: hidden;
+}
+.head-user-menu dl dd .ckeckout .total-price{
+  display: block;
+  line-height: 20px;
+}
+.head-user-menu dl dd .ckeckout .btn-cart{
+  float:right;
+  line-height: 20px;
+  color:#fff;
+  background-color:#c81623;
+  padding: 4px 8px;
+  margin-top:4px;
+  border-radius: 4px;
+}
 .public_nav_layout {
   width: 100%;
   height: 36px;

@@ -1,13 +1,14 @@
 $(function(){
   // 用户选择登陆方式
   $(function(){
-    var check = $(".login_top>ul>li>a");
-    // console.log(check[1])
+    var check = $(".login_top>ul>li");
+    var a = check
+    console.log(a)
     for(var i=0;i<=check.length;i++){
       $(check[i]).click(function(){
         $(this).addClass("tabulous_active")
         .siblings().removeClass("tabulous_active")
-        console.log($(this)[0]  ,  ($(this)[0].siblings()))
+        console.log(i)
       })
     }
   })
